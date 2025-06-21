@@ -4,194 +4,303 @@ import Layout from '../layouts/Layout.astro';
 import Navigation from '../components/Navigation.astro';
 ---
 
-<Layout title="Contact - HilBar Consulting" description="Get in touch with HilBar Consulting to discuss your AI and automation needs. We're here to help transform your business.">
+<Layout title="Contact HilBar Consulting - Schedule AI Transformation Consultation" description="Contact HilBar Consulting for enterprise AI transformation, strategic consulting, and digital innovation. Schedule your free consultation to accelerate business growth through AI-powered solutions.">
   <Navigation />
+
+  <!-- Structured Data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact HilBar Consulting",
+    "description": "Contact HilBar Consulting for AI transformation and strategic consulting services",
+    "url": "https://hilbar.llc/contact",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "HilBar Consulting",
+      "email": "info@hilbar.llc",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Business Inquiries",
+        "email": "info@hilbar.llc",
+        "availableLanguage": "English"
+      },
+      "areaServed": "Global",
+      "serviceType": ["AI Strategy Consulting", "Digital Transformation", "Software Engineering", "Organizational Strategy"]
+    }
+  }
+  </script>
 
   <!-- Hero Section -->
   <section class="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
     <div class="max-w-7xl mx-auto">
       <div class="text-center mb-16" data-aos="fade-up">
-        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight mb-6 bg-gradient-to-r from-slate-900 via-blue-600 to-slate-900 dark:from-white dark:via-blue-400 dark:to-white bg-clip-text text-transparent">
+        <div class="inline-flex items-center space-x-2 px-4 py-2 bg-gradient-to-r from-pink-100 to-red-100 dark:from-pink-900/30 dark:to-red-900/30 rounded-full mb-6">
+          <span class="w-2 h-2 bg-pink-500 rounded-full"></span>
+          <span class="text-sm font-semibold text-pink-700 dark:text-pink-300">GET STARTED</span>
+        </div>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight mb-6 bg-gradient-to-r from-slate-900 via-pink-600 to-slate-900 dark:from-white dark:via-pink-400 dark:to-white bg-clip-text text-transparent">
           Let's Build Something Amazing
         </h1>
-        <p class="text-xl sm:text-2xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto leading-relaxed">
-          Ready to transform your business? Get in touch and let's discuss how we can help you scale smarter.
+        <p class="text-xl sm:text-2xl text-slate-600 dark:text-slate-300 max-w-4xl mx-auto leading-relaxed">
+          HilBar Consulting delivers high-impact solutions at the intersection of AI, software engineering, and organizational strategy. 
+          <span class="font-semibold text-slate-900 dark:text-white">Ready to scale smarter, execute faster, and lead with clarity?</span>
         </p>
+      </div>
+
+      <!-- Value Proposition Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+        <div class="bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-900/20 dark:to-cyan-900/20 rounded-2xl p-6 border border-blue-200/50 dark:border-blue-700/30">
+          <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+            </svg>
+          </div>
+          <h3 class="font-bold text-slate-900 dark:text-white mb-2">AI & Software Engineering</h3>
+          <p class="text-sm text-slate-600 dark:text-slate-400">Intelligent platforms and automation solutions</p>
+        </div>
+        
+        <div class="bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 rounded-2xl p-6 border border-purple-200/50 dark:border-purple-700/30">
+          <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 515.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 919.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+            </svg>
+          </div>
+          <h3 class="font-bold text-slate-900 dark:text-white mb-2">Organizational Strategy</h3>
+          <p class="text-sm text-slate-600 dark:text-slate-400">Leadership, HR, and talent transformation</p>
+        </div>
+        
+        <div class="bg-gradient-to-br from-emerald-50 to-green-50 dark:from-emerald-900/20 dark:to-green-900/20 rounded-2xl p-6 border border-emerald-200/50 dark:border-emerald-700/30">
+          <div class="w-12 h-12 bg-gradient-to-br from-emerald-500 to-green-500 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+            </svg>
+          </div>
+          <h3 class="font-bold text-slate-900 dark:text-white mb-2">High-Impact Solutions</h3>
+          <p class="text-sm text-slate-600 dark:text-slate-400">Complete transformation for a rapidly evolving world</p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Contact Form & Info Section -->
-  <section class="py-16 px-4 sm:px-6 lg:px-8">
+  <section class="py-16 px-4 sm:px-6 lg:px-8" id="contact-form">
     <div class="max-w-7xl mx-auto">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
-        <!-- Contact Form -->
+        
+        <!-- Strategic Contact Form -->
         <div data-aos="fade-right">
-          <div class="glass dark:glass-dark rounded-3xl p-8 sm:p-12">
-            <h2 class="text-2xl font-bold mb-8 text-slate-900 dark:text-white">Send us a message</h2>
-            <form action="https://formspree.io/f/your-form-id" method="POST" class="space-y-6">
+          <div class="bg-white dark:bg-slate-800 rounded-3xl p-8 sm:p-12 shadow-xl border border-slate-200/50 dark:border-slate-600/30">
+            <h2 class="text-2xl font-bold mb-2 text-slate-900 dark:text-white">Send us a message</h2>
+            <p class="text-slate-600 dark:text-slate-400 mb-8">Tell us about your project and how we can help you scale smarter.</p>
+            
+            <form action="https://formspree.io/f/your-form-id" method="POST" class="space-y-6" itemscope itemtype="https://schema.org/ContactAction">
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <div class="group">
-                  <label for="name" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">Full Name</label>
+                <div>
+                  <label for="name" class="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2">Full Name *</label>
                   <input 
                     type="text" 
                     name="name" 
                     id="name"
                     required 
-                    class="w-full px-4 py-3 bg-white/50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-600 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 group-hover:border-blue-300 dark:group-hover:border-blue-600"
-                    placeholder="John Doe"
+                    itemprop="name"
+                    class="w-full px-4 py-3 bg-slate-50 dark:bg-slate-700 border border-slate-200 dark:border-slate-600 rounded-xl focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all duration-300"
+                    placeholder="Executive Name"
                   />
                 </div>
-                <div class="group">
-                  <label for="email" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">Email Address</label>
+                <div>
+                  <label for="email" class="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2">Business Email *</label>
                   <input 
                     type="email" 
                     name="email" 
                     id="email"
                     required 
-                    class="w-full px-4 py-3 bg-white/50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-600 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 group-hover:border-blue-300 dark:group-hover:border-blue-600"
-                    placeholder="john@example.com"
+                    itemprop="email"
+                    class="w-full px-4 py-3 bg-slate-50 dark:bg-slate-700 border border-slate-200 dark:border-slate-600 rounded-xl focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all duration-300"
+                    placeholder="executive@company.com"
                   />
                 </div>
               </div>
               
-              <div class="group">
-                <label for="company" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">Company (Optional)</label>
-                <input 
-                  type="text" 
-                  name="company" 
-                  id="company"
-                  class="w-full px-4 py-3 bg-white/50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-600 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 group-hover:border-blue-300 dark:group-hover:border-blue-600"
-                  placeholder="Your Company Name"
-                />
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div>
+                  <label for="company" class="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2">Company *</label>
+                  <input 
+                    type="text" 
+                    name="company" 
+                    id="company"
+                    required
+                    itemprop="organization"
+                    class="w-full px-4 py-3 bg-slate-50 dark:bg-slate-700 border border-slate-200 dark:border-slate-600 rounded-xl focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all duration-300"
+                    placeholder="Your Organization"
+                  />
+                </div>
+                <div>
+                  <label for="role" class="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2">Role/Title</label>
+                  <input 
+                    type="text" 
+                    name="role" 
+                    id="role"
+                    itemprop="jobTitle"
+                    class="w-full px-4 py-3 bg-slate-50 dark:bg-slate-700 border border-slate-200 dark:border-slate-600 rounded-xl focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all duration-300"
+                    placeholder="CEO, CTO, VP Operations..."
+                  />
+                </div>
               </div>
               
-              <div class="group">
-                <label for="subject" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">Subject</label>
+              <div>
+                <label for="challenge" class="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2">Primary Business Challenge *</label>
                 <select 
-                  name="subject" 
-                  id="subject"
-                  class="w-full px-4 py-3 bg-white/50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-600 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 group-hover:border-blue-300 dark:group-hover:border-blue-600"
+                  name="challenge" 
+                  id="challenge"
+                  required
+                  class="w-full px-4 py-3 bg-slate-50 dark:bg-slate-700 border border-slate-200 dark:border-slate-600 rounded-xl focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all duration-300"
                 >
-                  <option value="">Select a topic...</option>
-                  <option value="ai-integration">AI Integration</option>
-                  <option value="process-automation">Process Automation</option>
-                  <option value="systems-analysis">Systems Analysis</option>
-                  <option value="general-inquiry">General Inquiry</option>
-                  <option value="partnership">Partnership Opportunity</option>
+                  <option value="">Select your primary focus...</option>
+                  <option value="ai-strategy">AI Strategy & Roadmap Development</option>
+                  <option value="digital-transformation">Digital Transformation & Automation</option>
+                  <option value="process-optimization">Process Optimization & Efficiency</option>
+                  <option value="competitive-advantage">Competitive Advantage Through AI</option>
+                  <option value="organizational-change">Organizational Change Management</option>
+                  <option value="custom-solution">Custom AI Solution Development</option>
+                  <option value="strategic-partnership">Strategic Partnership Discussion</option>
                 </select>
               </div>
               
-              <div class="group">
-                <label for="message" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">Message</label>
+              <div>
+                <label for="objectives" class="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2">Transformation Objectives *</label>
                 <textarea 
-                  name="message" 
-                  id="message"
-                  rows="5"
+                  name="objectives" 
+                  id="objectives"
+                  rows="4"
                   required 
-                  class="w-full px-4 py-3 bg-white/50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-600 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 resize-none group-hover:border-blue-300 dark:group-hover:border-blue-600"
-                  placeholder="Tell us about your project and how we can help..."
+                  itemprop="description"
+                  class="w-full px-4 py-3 bg-slate-50 dark:bg-slate-700 border border-slate-200 dark:border-slate-600 rounded-xl focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all duration-300 resize-none"
+                  placeholder="Describe your business objectives, current challenges, and what success looks like for your organization..."
                 ></textarea>
               </div>
               
-              <div class="flex flex-col sm:flex-row gap-4 pt-4">
+              <div>
+                <label for="timeline" class="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2">Expected Timeline</label>
+                <select 
+                  name="timeline" 
+                  id="timeline"
+                  class="w-full px-4 py-3 bg-slate-50 dark:bg-slate-700 border border-slate-200 dark:border-slate-600 rounded-xl focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all duration-300"
+                >
+                  <option value="">Select implementation timeline...</option>
+                  <option value="immediate">Immediate (1-3 months)</option>
+                  <option value="near-term">Near-term (3-6 months)</option>
+                  <option value="mid-term">Mid-term (6-12 months)</option>
+                  <option value="strategic">Strategic planning (12+ months)</option>
+                  <option value="exploring">Exploring options</option>
+                </select>
+              </div>
+              
+              <div class="pt-4">
                 <button 
                   type="submit" 
-                  class="group flex-1 sm:flex-none px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 text-white rounded-xl font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 flex items-center justify-center"
+                  class="w-full px-8 py-4 bg-gradient-to-r from-pink-600 to-red-600 hover:from-pink-500 hover:to-red-500 text-white rounded-xl font-bold text-lg shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 flex items-center justify-center"
                 >
                   Send Message
-                  <svg class="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg class="ml-3 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
                   </svg>
                 </button>
-                <a 
-                  href="mailto:info@hilbar.llc" 
-                  class="flex-1 sm:flex-none px-8 py-4 glass dark:glass-dark rounded-xl font-semibold hover:bg-white/20 dark:hover:bg-black/20 transform hover:-translate-y-1 transition-all duration-300 flex items-center justify-center text-center"
-                >
-                  Email Directly
-                </a>
+                <p class="text-xs text-slate-500 dark:text-slate-400 mt-3 text-center">
+                  We'll respond within 24 hours
+                </p>
               </div>
             </form>
           </div>
         </div>
 
-        <!-- Contact Information -->
+        <!-- Contact Information & Next Steps -->
         <div data-aos="fade-left">
           <div class="space-y-8">
-            <!-- Contact Methods -->
-            <div class="glass dark:glass-dark rounded-2xl p-8">
-              <h3 class="text-xl font-bold mb-6 text-slate-900 dark:text-white">Get in Touch</h3>
-              <div class="space-y-6">
-                <div class="flex items-center group">
-                  <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mr-4 group-hover:animate-glow">
+            
+            <!-- Direct Contact -->
+            <div class="bg-gradient-to-br from-slate-50 to-white dark:from-slate-800 dark:to-slate-700 rounded-2xl p-8 shadow-lg border border-slate-200/50 dark:border-slate-600/30">
+              <h3 class="text-xl font-bold mb-6 text-slate-900 dark:text-white">Direct Contact</h3>
+              <div class="space-y-4">
+                <div class="flex items-center group cursor-pointer" onclick="window.location.href='mailto:info@hilbar.llc'">
+                  <div class="w-12 h-12 bg-gradient-to-br from-pink-500 to-red-500 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
                     <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                     </svg>
                   </div>
                   <div>
-                    <h4 class="font-semibold text-slate-900 dark:text-white">Email</h4>
-                    <p class="text-slate-600 dark:text-slate-400">info@hilbar.llc</p>
+                    <h4 class="font-semibold text-slate-900 dark:text-white">Enterprise Inquiries</h4>
+                    <p class="text-pink-600 dark:text-pink-400 font-medium">info@hilbar.llc</p>
+                    <p class="text-sm text-slate-500 dark:text-slate-400">Typical response: 4-6 hours</p>
                   </div>
                 </div>
                 
-                <div class="flex items-center group">
-                  <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center mr-4 group-hover:animate-glow">
+                <div class="flex items-center">
+                  <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center mr-4">
                     <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9V3"></path>
                     </svg>
                   </div>
                   <div>
-                    <h4 class="font-semibold text-slate-900 dark:text-white">Phone</h4>
-                    <p class="text-slate-600 dark:text-slate-400">+1 (555) 123-4567</p>
-                  </div>
-                </div>
-                
-                <div class="flex items-center group">
-                  <div class="w-12 h-12 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-xl flex items-center justify-center mr-4 group-hover:animate-glow">
-                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                    </svg>
-                  </div>
-                  <div>
-                    <h4 class="font-semibold text-slate-900 dark:text-white">Location</h4>
-                    <p class="text-slate-600 dark:text-slate-400">Remote & Global</p>
+                    <h4 class="font-semibold text-slate-900 dark:text-white">Global Reach</h4>
+                    <p class="text-slate-600 dark:text-slate-400">Remote-first, worldwide delivery</p>
+                    <p class="text-sm text-slate-500 dark:text-slate-400">Time zones: EST, PST, GMT, CET</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!-- Business Hours -->
-            <div class="glass dark:glass-dark rounded-2xl p-8">
-              <h3 class="text-xl font-bold mb-6 text-slate-900 dark:text-white">Business Hours</h3>
-              <div class="space-y-3">
-                <div class="flex justify-between">
-                  <span class="text-slate-600 dark:text-slate-400">Monday - Friday</span>
-                  <span class="font-medium text-slate-900 dark:text-white">9:00 AM - 6:00 PM EST</span>
+            <!-- What Happens Next -->
+            <div class="bg-gradient-to-br from-slate-50 to-white dark:from-slate-800 dark:to-slate-700 rounded-2xl p-8 shadow-lg border border-slate-200/50 dark:border-slate-600/30">
+              <h3 class="text-xl font-bold mb-6 text-slate-900 dark:text-white">What Happens Next</h3>
+              <div class="space-y-6">
+                <div class="flex items-start">
+                  <div class="w-8 h-8 bg-gradient-to-br from-pink-500 to-red-500 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                    <span class="text-white font-bold text-sm">1</span>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-slate-900 dark:text-white mb-1">Initial Assessment</h4>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">We'll review your submission and respond within 4-6 hours with next steps</p>
+                  </div>
                 </div>
-                <div class="flex justify-between">
-                  <span class="text-slate-600 dark:text-slate-400">Saturday</span>
-                  <span class="font-medium text-slate-900 dark:text-white">10:00 AM - 2:00 PM EST</span>
+                
+                <div class="flex items-start">
+                  <div class="w-8 h-8 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                    <span class="text-white font-bold text-sm">2</span>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-slate-900 dark:text-white mb-1">Strategy Session</h4>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">45-minute consultation to assess AI readiness and identify opportunities</p>
+                  </div>
                 </div>
-                <div class="flex justify-between">
-                  <span class="text-slate-600 dark:text-slate-400">Sunday</span>
-                  <span class="font-medium text-slate-900 dark:text-white">Closed</span>
+                
+                <div class="flex items-start">
+                  <div class="w-8 h-8 bg-gradient-to-br from-emerald-500 to-green-500 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                    <span class="text-white font-bold text-sm">3</span>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-slate-900 dark:text-white mb-1">Custom Proposal</h4>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">Detailed transformation roadmap with timeline, investment, and ROI projections</p>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <!-- Response Time -->
-            <div class="glass dark:glass-dark rounded-2xl p-8">
-              <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-white">Response Time</h3>
-              <p class="text-slate-600 dark:text-slate-400 mb-4">
-                We typically respond to all inquiries within 24 hours during business days. For urgent matters, please call us directly.
+            <!-- Alternative Contact -->
+            <div class="bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-900/20 dark:to-cyan-900/20 rounded-2xl p-6 border border-blue-200/50 dark:border-blue-700/30">
+              <h4 class="font-bold text-slate-900 dark:text-white mb-2">Prefer Email?</h4>
+              <p class="text-sm text-slate-600 dark:text-slate-400 mb-4">
+                Send us a detailed message about your transformation objectives directly.
               </p>
-              <div class="flex items-center text-sm text-blue-600 dark:text-blue-400">
-                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              <a 
+                href="mailto:info@hilbar.llc?subject=Enterprise AI Transformation Inquiry&body=Hello HilBar Team,%0D%0A%0D%0AI'm interested in discussing AI transformation opportunities for our organization.%0D%0A%0D%0ACompany:%0D%0AMy Role:%0D%0APrimary Challenge:%0D%0AObjectives:%0D%0A%0D%0APlease schedule a consultation at your earliest convenience.%0D%0A%0D%0AThank you," 
+                class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-lg font-semibold hover:from-blue-500 hover:to-cyan-500 transition-all duration-300"
+              >
+                Email Directly
+                <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
                 </svg>
-                Average response: 4-6 hours
-              </div>
+              </a>
             </div>
           </div>
         </div>
@@ -199,39 +308,48 @@ import Navigation from '../components/Navigation.astro';
     </div>
   </section>
 
-  <!-- FAQ Section -->
-  <section class="py-16 px-4 sm:px-6 lg:px-8 bg-slate-50 dark:bg-slate-800/50">
+  <!-- Enterprise FAQ Section -->
+  <section class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-slate-50 to-white dark:from-slate-900 dark:to-slate-800">
     <div class="max-w-4xl mx-auto">
-      <div class="text-center mb-12" data-aos="fade-up">
-        <h2 class="text-3xl font-bold mb-4 bg-gradient-to-r from-slate-900 to-slate-600 dark:from-white dark:to-slate-300 bg-clip-text text-transparent">
-          Frequently Asked Questions
+      <div class="text-center mb-16" data-aos="fade-up">
+        <div class="inline-flex items-center space-x-2 px-4 py-2 bg-gradient-to-r from-emerald-100 to-green-100 dark:from-emerald-900/30 dark:to-green-900/30 rounded-full mb-6">
+          <span class="w-2 h-2 bg-emerald-500 rounded-full"></span>
+          <span class="text-sm font-semibold text-emerald-700 dark:text-emerald-300">ENTERPRISE FAQ</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-black mb-6 bg-gradient-to-r from-slate-900 to-slate-600 dark:from-white dark:to-slate-300 bg-clip-text text-transparent">
+          Strategic Transformation Questions
         </h2>
-        <p class="text-slate-600 dark:text-slate-400">Quick answers to common questions about our services</p>
+        <p class="text-xl text-slate-600 dark:text-slate-400">Enterprise-focused answers for executive decision makers</p>
       </div>
 
       <div class="space-y-6" data-aos="fade-up" data-aos-delay="200">
-        <!-- FAQ Item 1 -->
-        <div class="glass dark:glass-dark rounded-xl p-6">
-          <h3 class="text-lg font-semibold mb-3 text-slate-900 dark:text-white">How long does a typical AI implementation project take?</h3>
-          <p class="text-slate-600 dark:text-slate-400">Project timelines vary based on complexity and scope. Simple automation projects can be completed in 2-4 weeks, while comprehensive AI integrations typically take 2-6 months. We provide detailed timelines during our initial consultation.</p>
+        
+        <div class="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg border border-slate-200/50 dark:border-slate-600/30" itemscope itemtype="https://schema.org/Question">
+          <h3 class="text-lg font-bold mb-3 text-slate-900 dark:text-white" itemprop="name">What ROI can we expect from AI transformation initiatives?</h3>
+          <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+            <p class="text-slate-600 dark:text-slate-400" itemprop="text">Enterprise clients typically see 3X faster ROI compared to traditional approaches, with average cost reductions of 45% in operational processes. ROI varies by industry and implementation scope, but most organizations achieve payback within 12-18 months through efficiency gains, automation savings, and competitive advantages.</p>
+          </div>
         </div>
 
-        <!-- FAQ Item 2 -->
-        <div class="glass dark:glass-dark rounded-xl p-6">
-          <h3 class="text-lg font-semibold mb-3 text-slate-900 dark:text-white">What industries do you work with?</h3>
-          <p class="text-slate-600 dark:text-slate-400">We work across diverse industries including healthcare, finance, manufacturing, retail, and technology. Our solutions are tailored to meet the unique challenges and requirements of each sector.</p>
+        <div class="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg border border-slate-200/50 dark:border-slate-600/30" itemscope itemtype="https://schema.org/Question">
+          <h3 class="text-lg font-bold mb-3 text-slate-900 dark:text-white" itemprop="name">How do you ensure enterprise-grade security and compliance?</h3>
+          <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+            <p class="text-slate-600 dark:text-slate-400" itemprop="text">We implement enterprise-grade security frameworks including SOC 2 compliance, end-to-end encryption, and industry-specific regulations (GDPR, HIPAA, SOX). All AI models and data processing adhere to zero-trust architecture principles with comprehensive audit trails and governance controls.</p>
+          </div>
         </div>
 
-        <!-- FAQ Item 3 -->
-        <div class="glass dark:glass-dark rounded-xl p-6">
-          <h3 class="text-lg font-semibold mb-3 text-slate-900 dark:text-white">Do you provide ongoing support after implementation?</h3>
-          <p class="text-slate-600 dark:text-slate-400">Yes! We offer comprehensive support packages including monitoring, maintenance, updates, and training. Our goal is to ensure your AI solutions continue to deliver value long after implementation.</p>
+        <div class="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg border border-slate-200/50 dark:border-slate-600/30" itemscope itemtype="https://schema.org/Question">
+          <h3 class="text-lg font-bold mb-3 text-slate-900 dark:text-white" itemprop="name">What's your approach to organizational change management?</h3>
+          <div itemprop="acceptedAnswer" itemscope itemtype="https://Schema.org/Answer">
+            <p class="text-slate-600 dark:text-slate-400" itemprop="text">Our transformation methodology integrates technical implementation with executive coaching, team capability building, and culture development. We ensure sustainable adoption through structured change management, AI literacy programs, and executive leadership alignment throughout the transformation journey.</p>
+          </div>
         </div>
 
-        <!-- FAQ Item 4 -->
-        <div class="glass dark:glass-dark rounded-xl p-6">
-          <h3 class="text-lg font-semibold mb-3 text-slate-900 dark:text-white">How do you ensure data security and privacy?</h3>
-          <p class="text-slate-600 dark:text-slate-400">Data security is our top priority. We implement enterprise-grade security measures, follow industry best practices, and ensure compliance with relevant regulations like GDPR and HIPAA where applicable.</p>
+        <div class="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg border border-slate-200/50 dark:border-slate-600/30" itemscope itemtype="https://schema.org/Question">
+          <h3 class="text-lg font-bold mb-3 text-slate-900 dark:text-white" itemprop="name">How quickly can we see measurable business impact?</h3>
+          <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+            <p class="text-slate-600 dark:text-slate-400" itemprop="text">Our rapid prototyping approach delivers proof-of-concept results within 4-6 weeks, with measurable KPIs and business impact. Full enterprise implementation typically takes 12-16 weeks, with continuous optimization and scaling based on performance metrics and business objectives.</p>
+          </div>
         </div>
       </div>
     </div>
