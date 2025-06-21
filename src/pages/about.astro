@@ -1,0 +1,190 @@
+---
+// src/pages/about.astro
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.astro';
+---
+
+<Layout title="About - HilBar Consulting" description="Learn about HilBar LLC's mission, expertise, and the team behind our AI-powered consulting solutions.">
+  <Navigation />
+
+  <!-- Hero Section -->
+  <section class="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight mb-6 bg-gradient-to-r from-slate-900 via-blue-600 to-slate-900 dark:from-white dark:via-blue-400 dark:to-white bg-clip-text text-transparent">
+          About HilBar
+        </h1>
+        <p class="text-xl sm:text-2xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto leading-relaxed">
+          Building the future through strategic AI integration and intelligent automation solutions.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission Section -->
+  <section class="py-16 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div data-aos="fade-right">
+          <h2 class="text-3xl sm:text-4xl font-bold mb-8 bg-gradient-to-r from-slate-900 to-slate-600 dark:from-white dark:to-slate-300 bg-clip-text text-transparent">
+            Our Mission
+          </h2>
+          <div class="prose prose-lg dark:prose-invert max-w-none">
+            <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-6">
+              At HilBar LLC, we believe that every business deserves access to cutting-edge technology that drives growth, efficiency, and innovation. Our mission is to democratize AI and automation, making these powerful tools accessible and actionable for companies of all sizes.
+            </p>
+            <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-6">
+              We don't just implement solutions—we transform how businesses think about their processes, data, and future possibilities. Through strategic consulting and hands-on implementation, we help organizations build sustainable competitive advantages in an AI-driven world.
+            </p>
+          </div>
+        </div>
+        
+        <div class="relative" data-aos="fade-left">
+          <div class="glass dark:glass-dark rounded-3xl p-8 relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10 dark:from-blue-400/10 dark:to-purple-400/10"></div>
+            <div class="relative z-10">
+              <h3 class="text-2xl font-bold mb-6 text-slate-900 dark:text-white">Our Core Values</h3>
+              <ul class="space-y-4">
+                <li class="flex items-start">
+                  <div class="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center mr-4 mt-0.5 flex-shrink-0">
+                    <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-slate-900 dark:text-white mb-1">Innovation First</h4>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm">Embracing cutting-edge solutions that drive real business value</p>
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <div class="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center mr-4 mt-0.5 flex-shrink-0">
+                    <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-slate-900 dark:text-white mb-1">Client Partnership</h4>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm">Building long-term relationships based on trust and shared success</p>
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <div class="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center mr-4 mt-0.5 flex-shrink-0">
+                    <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-slate-900 dark:text-white mb-1">Measurable Impact</h4>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm">Delivering quantifiable results that matter to your bottom line</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Expertise Section -->
+  <section class="py-16 px-4 sm:px-6 lg:px-8 bg-slate-50 dark:bg-slate-800/50">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-6 bg-gradient-to-r from-slate-900 to-slate-600 dark:from-white dark:to-slate-300 bg-clip-text text-transparent">
+          Our Expertise
+        </h2>
+        <p class="text-xl text-slate-600 dark:text-slate-400 max-w-3xl mx-auto leading-relaxed">
+          Deep domain knowledge across industries and technologies, backed by years of hands-on experience.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Expertise Card 1 -->
+        <div class="glass dark:glass-dark rounded-2xl p-8 hover:shadow-2xl transition-all duration-500" data-aos="fade-up" data-aos-delay="200">
+          <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-white">AI Strategy & Implementation</h3>
+          <p class="text-slate-600 dark:text-slate-400 leading-relaxed">From machine learning models to natural language processing, we implement AI solutions that solve real business problems.</p>
+        </div>
+
+        <!-- Expertise Card 2 -->
+        <div class="glass dark:glass-dark rounded-2xl p-8 hover:shadow-2xl transition-all duration-500" data-aos="fade-up" data-aos-delay="400">
+          <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-white">Data Engineering & Analytics</h3>
+          <p class="text-slate-600 dark:text-slate-400 leading-relaxed">Building robust data pipelines and analytics frameworks that turn your data into actionable business intelligence.</p>
+        </div>
+
+        <!-- Expertise Card 3 -->
+        <div class="glass dark:glass-dark rounded-2xl p-8 hover:shadow-2xl transition-all duration-500" data-aos="fade-up" data-aos-delay="600">
+          <div class="w-16 h-16 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-white">Process Optimization</h3>
+          <p class="text-slate-600 dark:text-slate-400 leading-relaxed">Streamlining operations through intelligent automation and workflow redesign for maximum efficiency.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="py-16 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto">
+      <div class="glass dark:glass-dark rounded-3xl p-12" data-aos="fade-up">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold mb-4 text-slate-900 dark:text-white">Our Impact</h2>
+          <p class="text-slate-600 dark:text-slate-400">Delivering measurable results across diverse industries</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+          <div>
+            <div class="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">50+</div>
+            <div class="text-sm text-slate-600 dark:text-slate-400 font-medium">Projects Completed</div>
+          </div>
+          <div>
+            <div class="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">100%</div>
+            <div class="text-sm text-slate-600 dark:text-slate-400 font-medium">Client Satisfaction</div>
+          </div>
+          <div>
+            <div class="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">$2M+</div>
+            <div class="text-sm text-slate-600 dark:text-slate-400 font-medium">Cost Savings Generated</div>
+          </div>
+          <div>
+            <div class="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">24/7</div>
+            <div class="text-sm text-slate-600 dark:text-slate-400 font-medium">Support & Monitoring</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-20 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-4xl mx-auto text-center">
+      <div data-aos="fade-up">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-6 bg-gradient-to-r from-slate-900 to-slate-600 dark:from-white dark:to-slate-300 bg-clip-text text-transparent">
+          Ready to Work Together?
+        </h2>
+        <p class="text-xl text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
+          Let's discuss how HilBar can help transform your business with AI-powered solutions.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/contact" class="px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 text-white rounded-xl font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
+            Start a Conversation
+          </a>
+          <a href="/#services" class="px-8 py-4 glass dark:glass-dark rounded-xl font-semibold hover:bg-white/20 dark:hover:bg-black/20 transform hover:-translate-y-1 transition-all duration-300">
+            View Our Services
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
