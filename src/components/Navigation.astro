@@ -7,15 +7,15 @@
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between h-20">
       
-      <!-- Logo Section - Clickable to Homepage -->
+      <!-- Logo Section - Enhanced with Brand Promise -->
       <a href="/" class="flex items-center group transition-all duration-300 hover:scale-105">
         <div class="relative">
           <img 
             src="/hilbar_logo_nobg.png" 
-            alt="HilBar Logo" 
+            alt="HilBar AI Consulting Logo" 
             class="w-12 h-12 transition-all duration-300 group-hover:drop-shadow-lg" 
+            width="48" height="48"
           />
-          <!-- Subtle glow effect on hover -->
           <div class="absolute inset-0 bg-gradient-to-r from-pink-400 to-red-400 rounded-full blur-lg opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
         </div>
         <div class="ml-4">
@@ -30,6 +30,7 @@
       
       <!-- Desktop Navigation Menu -->
       <div class="hidden lg:flex items-center space-x-1">
+        <!-- Home -->
         <a href="/" class="nav-item group px-4 py-2 rounded-xl text-sm font-semibold transition-all duration-300 hover:bg-gradient-to-r hover:from-pink-50 hover:to-red-50 dark:hover:from-pink-900/20 dark:hover:to-red-900/20 hover:text-pink-600 dark:hover:text-pink-400">
           <span class="relative">
             Home
@@ -37,18 +38,11 @@
           </span>
         </a>
         
-        <a href="/about" class="nav-item group px-4 py-2 rounded-xl text-sm font-semibold transition-all duration-300 hover:bg-gradient-to-r hover:from-pink-50 hover:to-red-50 dark:hover:from-pink-900/20 dark:hover:to-red-900/20 hover:text-pink-600 dark:hover:text-pink-400">
-          <span class="relative">
-            About
-            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-pink-500 to-red-500 group-hover:w-full transition-all duration-300"></span>
-          </span>
-        </a>
-        
-        <!-- Services Dropdown -->
+        <!-- AI Solutions Mega Menu -->
         <div class="relative group">
           <button class="nav-item flex items-center px-4 py-2 rounded-xl text-sm font-semibold transition-all duration-300 hover:bg-gradient-to-r hover:from-pink-50 hover:to-red-50 dark:hover:from-pink-900/20 dark:hover:to-red-900/20 hover:text-pink-600 dark:hover:text-pink-400">
             <span class="relative">
-              Services
+              AI Solutions
               <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-pink-500 to-red-500 group-hover:w-full transition-all duration-300"></span>
             </span>
             <svg class="ml-1 w-4 h-4 transition-transform duration-300 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -56,53 +50,81 @@
             </svg>
           </button>
           
-          <!-- Dropdown Menu -->
-          <div class="absolute top-full left-0 mt-2 w-72 bg-white/95 dark:bg-slate-900/95 backdrop-blur-xl rounded-2xl shadow-2xl border border-white/20 dark:border-slate-700/50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+          <!-- Enhanced Mega Menu -->
+          <div class="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-96 bg-white/95 dark:bg-slate-900/95 backdrop-blur-xl rounded-2xl shadow-2xl border border-white/20 dark:border-slate-700/50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
             <div class="p-6">
-              <div class="grid grid-cols-1 gap-4">
-                <a href="/#services" class="flex items-start p-3 rounded-xl hover:bg-gradient-to-r hover:from-pink-50 hover:to-red-50 dark:hover:from-pink-900/20 dark:hover:to-red-900/20 transition-all duration-300 group/item">
-                  <div class="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center mr-3 group-hover/item:scale-110 transition-transform duration-300">
-                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <!-- Header -->
+              <div class="mb-6 text-center">
+                <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Transform Your Business with AI</h3>
+                <p class="text-sm text-slate-600 dark:text-slate-400">Complete solutions across technology, strategy, and people</p>
+              </div>
+              
+              <div class="grid grid-cols-1 gap-3">
+                <!-- Enterprise AI Strategy -->
+                <a href="/#ai-solutions-section" class="flex items-start p-4 rounded-xl hover:bg-gradient-to-r hover:from-emerald-50 hover:to-green-50 dark:hover:from-emerald-900/20 dark:hover:to-green-900/20 transition-all duration-300 group/item">
+                  <div class="w-12 h-12 bg-gradient-to-br from-emerald-500 to-green-500 rounded-xl flex items-center justify-center mr-4 group-hover/item:scale-110 transition-transform duration-300">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
                     </svg>
                   </div>
                   <div>
-                    <h3 class="font-semibold text-slate-900 dark:text-white mb-1">AI & Intelligence</h3>
-                    <p class="text-xs text-slate-600 dark:text-slate-400">Machine learning, automation & intelligent platforms</p>
+                    <h4 class="font-bold text-slate-900 dark:text-white mb-1">Enterprise AI Strategy</h4>
+                    <p class="text-xs text-slate-600 dark:text-slate-400">AI roadmaps, governance & strategic implementation</p>
                   </div>
                 </a>
                 
-                <a href="/#services" class="flex items-start p-3 rounded-xl hover:bg-gradient-to-r hover:from-pink-50 hover:to-red-50 dark:hover:from-pink-900/20 dark:hover:to-red-900/20 transition-all duration-300 group/item">
-                  <div class="w-10 h-10 bg-gradient-to-br from-purple-500 to-purple-600 rounded-lg flex items-center justify-center mr-3 group-hover/item:scale-110 transition-transform duration-300">
-                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                <!-- HR AI Transformation -->
+                <a href="/#ai-solutions-section" class="flex items-start p-4 rounded-xl hover:bg-gradient-to-r hover:from-purple-50 hover:to-pink-50 dark:hover:from-purple-900/20 dark:hover:to-pink-900/20 transition-all duration-300 group/item">
+                  <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl flex items-center justify-center mr-4 group-hover/item:scale-110 transition-transform duration-300">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m3-4a4 4 0 11-6 0 4 4 0 016 0z"></path>
                     </svg>
                   </div>
                   <div>
-                    <h3 class="font-semibold text-slate-900 dark:text-white mb-1">Organizational Strategy</h3>
-                    <p class="text-xs text-slate-600 dark:text-slate-400">Leadership, HR transformation & talent strategy</p>
+                    <h4 class="font-bold text-slate-900 dark:text-white mb-1">HR AI Transformation</h4>
+                    <p class="text-xs text-slate-600 dark:text-slate-400">Talent acquisition, retention & performance analytics</p>
                   </div>
                 </a>
                 
-                <a href="/#services" class="flex items-start p-3 rounded-xl hover:bg-gradient-to-r hover:from-pink-50 hover:to-red-50 dark:hover:from-pink-900/20 dark:hover:to-red-900/20 transition-all duration-300 group/item">
-                  <div class="w-10 h-10 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-lg flex items-center justify-center mr-3 group-hover/item:scale-110 transition-transform duration-300">
-                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                <!-- Supply Chain AI -->
+                <a href="/#supply-chain-section" class="flex items-start p-4 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-cyan-50 dark:hover:from-blue-900/20 dark:hover:to-cyan-900/20 transition-all duration-300 group/item">
+                  <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center mr-4 group-hover/item:scale-110 transition-transform duration-300">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
                     </svg>
                   </div>
                   <div>
-                    <h3 class="font-semibold text-slate-900 dark:text-white mb-1">Software Engineering</h3>
-                    <p class="text-xs text-slate-600 dark:text-slate-400">Custom platforms, system integration & development</p>
+                    <h4 class="font-bold text-slate-900 dark:text-white mb-1">Supply Chain AI</h4>
+                    <p class="text-xs text-slate-600 dark:text-slate-400">Predictive analytics, demand forecasting & optimization</p>
                   </div>
+                </a>
+              </div>
+              
+              <!-- CTA in Dropdown -->
+              <div class="mt-6 pt-4 border-t border-slate-200 dark:border-slate-600">
+                <a href="/contact" class="flex items-center justify-center w-full px-4 py-3 bg-gradient-to-r from-pink-500 to-red-500 hover:from-pink-600 hover:to-red-600 text-white rounded-xl font-semibold text-sm transition-all duration-300 transform hover:scale-105">
+                  <span>Schedule AI Consultation</span>
+                  <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                  </svg>
                 </a>
               </div>
             </div>
           </div>
         </div>
         
-        <a href="/contact" class="nav-item group px-4 py-2 rounded-xl text-sm font-semibold transition-all duration-300 hover:bg-gradient-to-r hover:from-pink-50 hover:to-red-50 dark:hover:from-pink-900/20 dark:hover:to-red-900/20 hover:text-pink-600 dark:hover:text-pink-400">
+        <!-- Why HilBar -->
+        <a href="/#why-hilbar-section" class="nav-item group px-4 py-2 rounded-xl text-sm font-semibold transition-all duration-300 hover:bg-gradient-to-r hover:from-pink-50 hover:to-red-50 dark:hover:from-pink-900/20 dark:hover:to-red-900/20 hover:text-pink-600 dark:hover:text-pink-400">
           <span class="relative">
-            Contact
+            Why HilBar
+            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-pink-500 to-red-500 group-hover:w-full transition-all duration-300"></span>
+          </span>
+        </a>
+        
+        <!-- About -->
+        <a href="/about" class="nav-item group px-4 py-2 rounded-xl text-sm font-semibold transition-all duration-300 hover:bg-gradient-to-r hover:from-pink-50 hover:to-red-50 dark:hover:from-pink-900/20 dark:hover:to-red-900/20 hover:text-pink-600 dark:hover:text-pink-400">
+          <span class="relative">
+            About
             <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-pink-500 to-red-500 group-hover:w-full transition-all duration-300"></span>
           </span>
         </a>
@@ -110,16 +132,16 @@
       
       <!-- Right Side Actions -->
       <div class="flex items-center space-x-3">
-        <!-- CTA Button -->
+        <!-- Contact CTA -->
         <a href="/contact" class="hidden md:inline-flex items-center px-6 py-3 bg-gradient-to-r from-pink-500 to-red-500 hover:from-pink-600 hover:to-red-600 text-white rounded-xl font-semibold text-sm shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-0.5">
-          <span>Get Started</span>
+          <span>Contact Us</span>
           <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
           </svg>
         </a>
         
         <!-- Dark Mode Toggle -->
-        <button id="darkToggle" class="p-3 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 transition-all duration-300 group">
+        <button id="darkToggle" class="p-3 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 transition-all duration-300 group" aria-label="Toggle dark mode">
           <svg class="w-5 h-5 dark:hidden group-hover:text-pink-500 transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
           </svg>
@@ -129,38 +151,52 @@
         </button>
         
         <!-- Mobile Menu Toggle -->
-        <button id="mobileMenuToggle" class="lg:hidden p-3 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 transition-all duration-300">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <button id="mobileMenuToggle" class="lg:hidden p-3 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 transition-all duration-300" aria-label="Toggle mobile menu">
+          <svg id="hamburger" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+          <svg id="close" class="w-6 h-6 hidden transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
           </svg>
         </button>
       </div>
     </div>
   </div>
   
-  <!-- Mobile Navigation Menu -->
+  <!-- Enhanced Mobile Navigation Menu -->
   <div id="mobileMenu" class="lg:hidden hidden bg-white/95 dark:bg-slate-900/95 backdrop-blur-xl border-t border-slate-200 dark:border-slate-700">
-    <div class="px-4 py-6 space-y-3">
+    <div class="px-4 py-6 space-y-2">
+      <!-- Mobile Navigation Links -->
       <a href="/" class="block px-4 py-3 rounded-xl text-base font-semibold hover:bg-gradient-to-r hover:from-pink-50 hover:to-red-50 dark:hover:from-pink-900/20 dark:hover:to-red-900/20 hover:text-pink-600 dark:hover:text-pink-400 transition-all duration-300">
-        Home
+        🏠 Home
       </a>
+      
+      <!-- Mobile AI Solutions -->
+      <div class="space-y-1">
+        <div class="px-4 py-2 text-sm font-semibold text-slate-600 dark:text-slate-400">AI Solutions</div>
+        <a href="/#ai-solutions-section" class="block px-6 py-2 rounded-xl text-sm hover:bg-gradient-to-r hover:from-emerald-50 hover:to-green-50 dark:hover:from-emerald-900/20 dark:hover:to-green-900/20 hover:text-emerald-600 dark:hover:text-emerald-400 transition-all duration-300">
+          🧠 Enterprise AI Strategy
+        </a>
+        <a href="/#ai-solutions-section" class="block px-6 py-2 rounded-xl text-sm hover:bg-gradient-to-r hover:from-purple-50 hover:to-pink-50 dark:hover:from-purple-900/20 dark:hover:to-pink-900/20 hover:text-purple-600 dark:hover:text-purple-400 transition-all duration-300">
+          👥 HR AI Transformation
+        </a>
+        <a href="/#supply-chain-section" class="block px-6 py-2 rounded-xl text-sm hover:bg-gradient-to-r hover:from-blue-50 hover:to-cyan-50 dark:hover:from-blue-900/20 dark:hover:to-cyan-900/20 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-300">
+          📊 Supply Chain AI
+        </a>
+      </div>
+      
+      <a href="/#why-hilbar-section" class="block px-4 py-3 rounded-xl text-base font-semibold hover:bg-gradient-to-r hover:from-pink-50 hover:to-red-50 dark:hover:from-pink-900/20 dark:hover:to-red-900/20 hover:text-pink-600 dark:hover:text-pink-400 transition-all duration-300">
+        ⭐ Why HilBar
+      </a>
+      
       <a href="/about" class="block px-4 py-3 rounded-xl text-base font-semibold hover:bg-gradient-to-r hover:from-pink-50 hover:to-red-50 dark:hover:from-pink-900/20 dark:hover:to-red-900/20 hover:text-pink-600 dark:hover:text-pink-400 transition-all duration-300">
-        About
-      </a>
-      <a href="/#services" class="block px-4 py-3 rounded-xl text-base font-semibold hover:bg-gradient-to-r hover:from-pink-50 hover:to-red-50 dark:hover:from-pink-900/20 dark:hover:to-red-900/20 hover:text-pink-600 dark:hover:text-pink-400 transition-all duration-300">
-        Services
-      </a>
-      <a href="/contact" class="block px-4 py-3 rounded-xl text-base font-semibold hover:bg-gradient-to-r hover:from-pink-50 hover:to-red-50 dark:hover:from-pink-900/20 dark:hover:to-red-900/20 hover:text-pink-600 dark:hover:text-pink-400 transition-all duration-300">
-        Contact
+        ℹ️ About Us
       </a>
       
       <!-- Mobile CTA -->
       <div class="pt-4">
-        <a href="/contact" class="flex items-center justify-center w-full px-6 py-4 bg-gradient-to-r from-pink-500 to-red-500 text-white rounded-xl font-semibold shadow-lg transition-all duration-300">
-          <span>Get Started</span>
-          <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
-          </svg>
+        <a href="/contact" class="flex items-center justify-center w-full px-6 py-4 bg-gradient-to-r from-pink-500 to-red-500 text-white rounded-xl font-bold shadow-lg transition-all duration-300 transform hover:scale-105">
+          <span>🚀 Start Your AI Transformation</span>
         </a>
       </div>
     </div>
@@ -172,7 +208,6 @@
   const darkToggle = document.getElementById('darkToggle');
   const html = document.documentElement;
   
-  // Check for saved theme preference or default to 'light'
   const currentTheme = localStorage.getItem('theme') || 'light';
   html.classList.toggle('dark', currentTheme === 'dark');
   
@@ -182,12 +217,24 @@
     localStorage.setItem('theme', newTheme);
   });
 
-  // Mobile Menu Toggle
+  // Enhanced Mobile Menu Toggle
   const mobileMenuToggle = document.getElementById('mobileMenuToggle');
   const mobileMenu = document.getElementById('mobileMenu');
+  const hamburger = document.getElementById('hamburger');
+  const closeIcon = document.getElementById('close');
   
   mobileMenuToggle?.addEventListener('click', () => {
-    mobileMenu?.classList.toggle('hidden');
+    const isHidden = mobileMenu?.classList.contains('hidden');
+    
+    if (isHidden) {
+      mobileMenu?.classList.remove('hidden');
+      hamburger?.classList.add('hidden');
+      closeIcon?.classList.remove('hidden');
+    } else {
+      mobileMenu?.classList.add('hidden');
+      hamburger?.classList.remove('hidden');
+      closeIcon?.classList.add('hidden');
+    }
   });
 
   // Close mobile menu when clicking on links
@@ -195,20 +242,36 @@
   mobileLinks?.forEach(link => {
     link.addEventListener('click', () => {
       mobileMenu?.classList.add('hidden');
+      hamburger?.classList.remove('hidden');
+      closeIcon?.classList.add('hidden');
     });
   });
 
-  // Dynamic Navbar Background
+  // Enhanced Dynamic Navbar Background
   const navbar = document.getElementById('navbar');
+  let lastScrollY = window.scrollY;
+  
   window.addEventListener('scroll', () => {
-    if (window.scrollY > 20) {
+    const currentScrollY = window.scrollY;
+    
+    // Add background when scrolled
+    if (currentScrollY > 20) {
       navbar.classList.add('bg-white/90', 'dark:bg-slate-900/90', 'backdrop-blur-xl', 'shadow-lg', 'border-b', 'border-slate-200/50', 'dark:border-slate-700/50');
     } else {
       navbar.classList.remove('bg-white/90', 'dark:bg-slate-900/90', 'backdrop-blur-xl', 'shadow-lg', 'border-b', 'border-slate-200/50', 'dark:border-slate-700/50');
     }
+    
+    // Hide/show navbar on scroll (optional)
+    if (currentScrollY > lastScrollY && currentScrollY > 100) {
+      navbar.style.transform = 'translateY(-100%)';
+    } else {
+      navbar.style.transform = 'translateY(0)';
+    }
+    
+    lastScrollY = currentScrollY;
   });
 
-  // Smooth scrolling for anchor links
+  // Enhanced Smooth scrolling for anchor links
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
@@ -217,7 +280,7 @@
       
       const target = document.querySelector(targetId);
       if (target) {
-        const offsetTop = target.offsetTop - 100; // Account for fixed nav
+        const offsetTop = target.offsetTop - 100;
         window.scrollTo({
           top: offsetTop,
           behavior: 'smooth'
