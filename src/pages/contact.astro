@@ -172,8 +172,7 @@ import Navigation from "../components/Navigation.astro";
             </p>
 
             <form
-              action="https://formspree.io/f/xblyavqo"
-              method="POST"
+              id="hilbar-form"
               class="space-y-6"
               itemscope
               itemtype="https://schema.org/ContactAction"
@@ -355,6 +354,29 @@ import Navigation from "../components/Navigation.astro";
                 </p>
               </div>
             </form>
+
+            <script>
+              const form = document.getElementById("hilbar-form");
+
+              form.addEventListener("submit", async (e) => {
+                e.preventDefault();
+
+                const formData = new FormData(form);
+                const data = Object.fromEntries(formData.entries());
+
+                const res = await fetch("https://formspree.io/f/xblyavqo", {
+                  method: "POST",
+                  headers: { Accept: "application/json" },
+                  body: formData,
+                });
+
+                if (res.ok) {
+                  window.location.href = "/thank-you";
+                } else {
+                  alert("Submission failed. Please try again later.");
+                }
+              });
+            </script>
           </div>
         </div>
 
