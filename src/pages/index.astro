@@ -1,381 +1,197 @@
 ---
 // src/pages/index.astro
-import Layout from '../layouts/Layout.astro';
-import Navigation from '../components/Navigation.astro';
+import Layout from "../layouts/Layout.astro";
+import Navigation from "../components/Navigation.astro";
+import Hero from "../components/Hero.astro";
+import AISolutions from "../components/AISolutions.astro";
+import SupplyChainAI from "../components/SupplyChainAI.astro";
+import WhyHilbar from "../components/WhyHilbar.astro";
+import SuccessMetrics from "../components/SuccessMetrics.astro";
+import FinalCTA from "../components/FinalCTA.astro";
 ---
 
-<Layout title="HilBar Consulting - Scale • Execute • Lead" description="High-impact solutions at the intersection of AI, software engineering, and organizational strategy. Scale smarter, execute faster, and lead with clarity.">
+<Layout
+  title="AI Consulting | Supply Chain & HR Transformation | HilBar Consulting"
+  description="Leading AI consulting firm specializing in supply chain optimization, HR transformation, and enterprise AI strategy. McKinsey-style consulting for Fortune 500 companies and emerging leaders seeking competitive advantage through artificial intelligence solutions."
+>
   <Navigation />
 
-  <!-- Hero Section -->
-  <header class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-    <!-- Background Effects -->
-    <div class="absolute inset-0">
-      <div class="absolute top-20 left-20 w-72 h-72 bg-gradient-to-r from-pink-400 to-red-400 rounded-full blur-3xl opacity-10 animate-pulse"></div>
-      <div class="absolute bottom-20 right-20 w-96 h-96 bg-gradient-to-r from-purple-400 to-blue-400 rounded-full blur-3xl opacity-10 animate-pulse" style="animation-delay: 2s;"></div>
-      <div class="absolute top-1/2 left-1/3 w-48 h-48 bg-gradient-to-r from-cyan-400 to-pink-400 rounded-full blur-2xl opacity-10 animate-pulse" style="animation-delay: 4s;"></div>
-    </div>
+  <!-- Structured Data for SEO & AIO -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ConsultingCompany",
+      "name": "HilBar Consulting",
+      "description": "AI consulting firm specializing in supply chain optimization, HR transformation, and enterprise AI strategy",
+      "url": "https://hilbar.llc",
+      "logo": "https://hilbar.llc/hilbar_logo_nobg.png",
+      "sameAs": ["https://www.linkedin.com/company/hilbar-consulting"],
+      "serviceArea": "Global",
+      "foundingDate": "2023",
+      "expertise": [
+        "AI Consulting",
+        "Supply Chain Optimization",
+        "HR Transformation",
+        "Machine Learning Implementation",
+        "Digital Transformation",
+        "Organizational Strategy"
+      ],
+      "knowsAbout": [
+        "Artificial Intelligence",
+        "Supply Chain Management",
+        "Human Resources Technology",
+        "Business Process Automation",
+        "Predictive Analytics",
+        "Change Management"
+      ],
+      "areaServed": {
+        "@type": "Place",
+        "name": "Worldwide"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Business Inquiries",
+        "email": "info@hilbar.llc",
+        "availableLanguage": "English"
+      }
+    }
+  </script>
+
+  <!-- FAQ Structured Data for AIO -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How can AI solve supply chain problems?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AI solves supply chain problems through predictive analytics for demand forecasting, real-time inventory optimization, automated supplier risk assessment, and intelligent logistics routing. This reduces costs by 20-30% while improving delivery performance and supply chain resilience."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What AI consulting services does HilBar provide?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "HilBar provides AI strategy development, machine learning implementation, supply chain optimization, HR transformation through AI, predictive analytics, and organizational change management for AI adoption."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does AI transform HR operations?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AI transforms HR through intelligent talent acquisition, predictive employee retention models, automated performance analytics, personalized learning recommendations, and data-driven compensation optimization."
+          }
+        }
+      ]
+    }
+  </script>
+
+  <!-- Page Components -->
+  <div id="hero-section">
+    <Hero />
+  </div>
+  <div id="ai-solutions-section">
+    <AISolutions />
+  </div>
+  <div id="why-hilbar-section">
+    <WhyHilbar />
+  </div>
+  <div id="success-metrics-section">
+    <SuccessMetrics />
+  </div>
+  <div id="supply-chain-section">
+    <SupplyChainAI />
+  </div>
+  <div id="final-cta-section">
+    <FinalCTA />
+  </div>
+
+  <!-- Dynamic Section Navigator -->
+  <div id="section-navigator" class="fixed bottom-6 right-6 md:bottom-8 md:right-8 z-50">
+    <button id="next-section-btn" class="group w-10 h-10 md:w-14 md:h-14 bg-gradient-to-r from-pink-600 to-red-600 hover:from-pink-500 hover:to-red-500 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 flex items-center justify-center">
+      <svg class="w-4 h-4 md:w-6 md:h-6 text-white transition-transform duration-300 group-hover:translate-y-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+      </svg>
+    </button>
     
-    <div class="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
-      <!-- Logo with Enhanced Styling -->
-      <div class="mb-12">
-        <div class="relative inline-block">
-          <img 
-            src="/hilbar_logo_nobg.png" 
-            alt="HilBar Logo" 
-            class="mx-auto w-28 h-28 sm:w-36 sm:h-36 lg:w-40 lg:h-40 animate-float filter drop-shadow-2xl" 
-          />
-          <div class="absolute inset-0 bg-gradient-to-r from-pink-400 to-red-400 rounded-full blur-2xl opacity-20 animate-pulse"></div>
-        </div>
-      </div>
-      
-      <!-- Main Headline -->
-      <h1 class="text-5xl sm:text-6xl lg:text-8xl font-black tracking-tight mb-8">
-        <span class="bg-gradient-to-r from-pink-600 via-red-500 to-pink-600 bg-clip-text text-transparent animate-gradient">
-          HILBAR
-        </span>
-        <div class="text-2xl sm:text-3xl lg:text-4xl font-light text-slate-600 dark:text-slate-400 mt-2 tracking-widest">
-          CONSULTING
-        </div>
-      </h1>
-      
-      <!-- Tagline -->
-      <div class="mb-8">
-        <div class="inline-flex items-center space-x-3 px-6 py-3 bg-gradient-to-r from-pink-500/10 to-red-500/10 rounded-full border border-pink-500/20 backdrop-blur-sm">
-          <span class="w-2 h-2 bg-pink-500 rounded-full animate-pulse"></span>
-          <span class="text-lg font-semibold bg-gradient-to-r from-pink-600 to-red-600 bg-clip-text text-transparent">
-            SCALE • EXECUTE • LEAD
-          </span>
-          <span class="w-2 h-2 bg-red-500 rounded-full animate-pulse" style="animation-delay: 1s;"></span>
-        </div>
-      </div>
-      
-      <!-- Value Proposition -->
-      <p class="text-xl sm:text-2xl lg:text-3xl font-light max-w-5xl mx-auto mb-12 text-slate-700 dark:text-slate-300 leading-relaxed">
-        <span class="font-semibold text-slate-900 dark:text-white">High-impact solutions</span> at the intersection of 
-        <span class="bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent font-semibold">AI</span>, 
-        <span class="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent font-semibold">software engineering</span>, and 
-        <span class="bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent font-semibold">organizational strategy</span>.
-        <br class="hidden sm:block">
-        <span class="text-lg sm:text-xl lg:text-2xl text-slate-600 dark:text-slate-400 block mt-4">
-          We help businesses scale smarter, execute faster, and lead with clarity in a rapidly evolving world.
-        </span>
-      </p>
-      
-      <!-- CTA Buttons -->
-      <div class="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
-        <a href="/contact" class="group px-10 py-5 bg-gradient-to-r from-pink-600 to-red-600 hover:from-pink-500 hover:to-red-500 text-white rounded-2xl font-bold text-lg shadow-2xl hover:shadow-3xl transform hover:-translate-y-2 transition-all duration-500 flex items-center">
-          <span>Start Your Transformation</span>
-          <svg class="ml-3 w-6 h-6 group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
-          </svg>
-        </a>
-        <a href="#services" class="group px-10 py-5 bg-white/10 dark:bg-slate-800/30 backdrop-blur-sm border border-white/20 dark:border-slate-700/50 rounded-2xl font-semibold text-lg hover:bg-white/20 dark:hover:bg-slate-700/40 transform hover:-translate-y-1 transition-all duration-300 flex items-center">
-          <span>Explore Solutions</span>
-          <svg class="ml-3 w-5 h-5 group-hover:translate-y-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-          </svg>
-        </a>
-      </div>
-
-      <!-- Trust Indicators -->
-      <div class="grid grid-cols-3 gap-8 max-w-2xl mx-auto">
-        <div class="text-center">
-          <div class="text-3xl font-black bg-gradient-to-r from-pink-500 to-red-500 bg-clip-text text-transparent mb-2">AI-First</div>
-          <div class="text-sm text-slate-600 dark:text-slate-400 font-medium">Approach</div>
-        </div>
-        <div class="text-center">
-          <div class="text-3xl font-black bg-gradient-to-r from-blue-500 to-cyan-500 bg-clip-text text-transparent mb-2">End-to-End</div>
-          <div class="text-sm text-slate-600 dark:text-slate-400 font-medium">Solutions</div>
-        </div>
-        <div class="text-center">
-          <div class="text-3xl font-black bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent mb-2">Expert</div>
-          <div class="text-sm text-slate-600 dark:text-slate-400 font-medium">Team</div>
-        </div>
-      </div>
+    <!-- Progress Indicator - Hidden on mobile -->
+    <div class="hidden md:block absolute -left-2 top-1/2 transform -translate-y-1/2 w-1 h-8 bg-slate-200 dark:bg-slate-700 rounded-full">
+      <div id="progress-bar" class="w-full bg-gradient-to-b from-pink-600 to-red-600 rounded-full transition-all duration-500" style="height: 0%"></div>
     </div>
-  </header>
-
-  <!-- Services Section -->
-  <section id="services" class="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-slate-50 to-white dark:from-slate-900 dark:to-slate-800">
-    <div class="max-w-7xl mx-auto">
-      <!-- Section Header -->
-      <div class="text-center mb-20">
-        <div class="inline-flex items-center space-x-2 px-4 py-2 bg-gradient-to-r from-pink-100 to-red-100 dark:from-pink-900/30 dark:to-red-900/30 rounded-full mb-6">
-          <span class="w-2 h-2 bg-pink-500 rounded-full"></span>
-          <span class="text-sm font-semibold text-pink-700 dark:text-pink-300">OUR EXPERTISE</span>
-        </div>
-        <h2 class="text-4xl sm:text-5xl lg:text-6xl font-black mb-6 bg-gradient-to-r from-slate-900 to-slate-600 dark:from-white dark:to-slate-300 bg-clip-text text-transparent">
-          Three Pillars of Excellence
-        </h2>
-        <p class="text-xl text-slate-600 dark:text-slate-400 max-w-4xl mx-auto leading-relaxed">
-          We deliver transformation across technology, strategy, and human potential—the complete solution for modern enterprises.
-        </p>
-      </div>
-      
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-        <!-- AI & Technology -->
-        <div class="group relative">
-          <div class="bg-gradient-to-br from-blue-500/5 to-cyan-500/5 dark:from-blue-500/10 dark:to-cyan-500/10 rounded-3xl p-8 border border-blue-200/20 dark:border-blue-700/30 hover:border-blue-300/40 dark:hover:border-blue-600/50 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl">
-            <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
-              <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
-              </svg>
-            </div>
-            <h3 class="text-2xl font-bold mb-4 text-slate-900 dark:text-white">AI & Technology</h3>
-            <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-6">
-              From machine learning models to intelligent platforms, we architect AI solutions that transform how you work, compete, and grow.
-            </p>
-            <ul class="space-y-2 text-sm text-slate-600 dark:text-slate-400">
-              <li class="flex items-center">
-                <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mr-3"></span>
-                Machine Learning & AI Strategy
-              </li>
-              <li class="flex items-center">
-                <span class="w-1.5 h-1.5 bg-cyan-500 rounded-full mr-3"></span>
-                Intelligent Platform Development
-              </li>
-              <li class="flex items-center">
-                <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mr-3"></span>
-                Process Automation & Integration
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Software Engineering -->
-        <div class="group relative">
-          <div class="bg-gradient-to-br from-purple-500/5 to-pink-500/5 dark:from-purple-500/10 dark:to-pink-500/10 rounded-3xl p-8 border border-purple-200/20 dark:border-purple-700/30 hover:border-purple-300/40 dark:hover:border-purple-600/50 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl">
-            <div class="w-20 h-20 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
-              <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
-              </svg>
-            </div>
-            <h3 class="text-2xl font-bold mb-4 text-slate-900 dark:text-white">Software Engineering</h3>
-            <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-6">
-              Custom platforms, system integrations, and scalable architectures that power your digital transformation initiatives.
-            </p>
-            <ul class="space-y-2 text-sm text-slate-600 dark:text-slate-400">
-              <li class="flex items-center">
-                <span class="w-1.5 h-1.5 bg-purple-500 rounded-full mr-3"></span>
-                Custom Platform Development
-              </li>
-              <li class="flex items-center">
-                <span class="w-1.5 h-1.5 bg-pink-500 rounded-full mr-3"></span>
-                System Integration & APIs
-              </li>
-              <li class="flex items-center">
-                <span class="w-1.5 h-1.5 bg-purple-500 rounded-full mr-3"></span>
-                Cloud Architecture & DevOps
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Organizational Strategy -->
-        <div class="group relative">
-          <div class="bg-gradient-to-br from-emerald-500/5 to-green-500/5 dark:from-emerald-500/10 dark:to-green-500/10 rounded-3xl p-8 border border-emerald-200/20 dark:border-emerald-700/30 hover:border-emerald-300/40 dark:hover:border-emerald-600/50 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl">
-            <div class="w-20 h-20 bg-gradient-to-br from-emerald-500 to-green-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
-              <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 515.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 919.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
-              </svg>
-            </div>
-            <h3 class="text-2xl font-bold mb-4 text-slate-900 dark:text-white">Organizational Strategy</h3>
-            <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-6">
-              Leadership development, HR transformation, and talent strategy that align your people with your technological evolution.
-            </p>
-            <ul class="space-y-2 text-sm text-slate-600 dark:text-slate-400">
-              <li class="flex items-center">
-                <span class="w-1.5 h-1.5 bg-emerald-500 rounded-full mr-3"></span>
-                Leadership & Executive Coaching
-              </li>
-              <li class="flex items-center">
-                <span class="w-1.5 h-1.5 bg-green-500 rounded-full mr-3"></span>
-                HR Transformation & Talent Strategy
-              </li>
-              <li class="flex items-center">
-                <span class="w-1.5 h-1.5 bg-emerald-500 rounded-full mr-3"></span>
-                Change Management & Culture
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Why HilBar Section -->
-  <section class="py-24 px-4 sm:px-6 lg:px-8">
-    <div class="max-w-7xl mx-auto">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-        <!-- Content -->
-        <div>
-          <div class="inline-flex items-center space-x-2 px-4 py-2 bg-gradient-to-r from-pink-100 to-red-100 dark:from-pink-900/30 dark:to-red-900/30 rounded-full mb-6">
-            <span class="w-2 h-2 bg-pink-500 rounded-full"></span>
-            <span class="text-sm font-semibold text-pink-700 dark:text-pink-300">WHY HILBAR</span>
-          </div>
-          <h2 class="text-4xl sm:text-5xl font-black mb-8 bg-gradient-to-r from-slate-900 to-slate-600 dark:from-white dark:to-slate-300 bg-clip-text text-transparent">
-            The Complete Transformation Partner
-          </h2>
-          <p class="text-xl text-slate-600 dark:text-slate-400 leading-relaxed mb-8">
-            Most consultancies focus on just technology or just strategy. We're different. We deliver end-to-end transformation that aligns your technology, processes, and people for sustainable growth.
-          </p>
-          
-          <div class="space-y-6">
-            <div class="flex items-start">
-              <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center mr-4 flex-shrink-0">
-                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                </svg>
-              </div>
-              <div>
-                <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Rapid Implementation</h3>
-                <p class="text-slate-600 dark:text-slate-400">Our integrated approach accelerates deployment and adoption, delivering tangible results quickly.</p>
-              </div>
-            </div>
-            
-            <div class="flex items-start">
-              <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl flex items-center justify-center mr-4 flex-shrink-0">
-                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg>
-              </div>
-              <div>
-                <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Proven Methodology</h3>
-                <p class="text-slate-600 dark:text-slate-400">Battle-tested frameworks designed for rapid implementation and sustainable transformation outcomes.</p>
-              </div>
-            </div>
-            
-            <div class="flex items-start">
-              <div class="w-12 h-12 bg-gradient-to-br from-emerald-500 to-green-500 rounded-xl flex items-center justify-center mr-4 flex-shrink-0">
-                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
-                </svg>
-              </div>
-              <div>
-                <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Measurable Impact</h3>
-                <p class="text-slate-600 dark:text-slate-400">Focus on delivering quantifiable results through efficiency gains, cost optimization, and strategic growth initiatives.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Strategic Value Proposition -->
-        <div class="relative">
-          <div class="bg-gradient-to-br from-slate-50 to-white dark:from-slate-800 dark:to-slate-700 rounded-3xl p-10 border border-slate-200/50 dark:border-slate-600/30 shadow-xl">
-            <!-- Key Metric -->
-            <div class="text-center mb-8">
-              <div class="text-5xl font-black bg-gradient-to-r from-pink-600 to-red-600 bg-clip-text text-transparent mb-2">3X</div>
-              <div class="text-lg font-semibold text-slate-700 dark:text-slate-300">Faster ROI</div>
-              <div class="text-sm text-slate-500 dark:text-slate-400 mt-1">vs. traditional approaches</div>
-            </div>
-            
-            <!-- Core Differentiators -->
-            <div class="space-y-6">
-              <div class="flex items-center">
-                <div class="w-3 h-3 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full mr-4"></div>
-                <span class="text-slate-700 dark:text-slate-300 font-medium">Integrated technology + strategy execution</span>
-              </div>
-              <div class="flex items-center">
-                <div class="w-3 h-3 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full mr-4"></div>
-                <span class="text-slate-700 dark:text-slate-300 font-medium">AI-native transformation approach</span>
-              </div>
-              <div class="flex items-center">
-                <div class="w-3 h-3 bg-gradient-to-r from-emerald-500 to-green-500 rounded-full mr-4"></div>
-                <span class="text-slate-700 dark:text-slate-300 font-medium">Measurable business impact from day one</span>
-              </div>
-            </div>
-            
-            <!-- Bottom CTA -->
-            <div class="mt-8 pt-6 border-t border-slate-200 dark:border-slate-600">
-              <a href="/contact" class="inline-flex items-center text-sm font-semibold text-pink-600 hover:text-pink-700 dark:text-pink-400 dark:hover:text-pink-300 transition-colors">
-                See our methodology
-                <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Final CTA Section -->
-  <section class="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-pink-500 to-red-600 relative overflow-hidden">
-    <!-- Background Pattern -->
-    <div class="absolute inset-0 opacity-10">
-      <div class="absolute top-10 left-10 w-32 h-32 bg-white rounded-full blur-3xl"></div>
-      <div class="absolute bottom-20 right-20 w-40 h-40 bg-white rounded-full blur-3xl"></div>
-      <div class="absolute top-1/2 left-1/3 w-24 h-24 bg-white rounded-full blur-2xl"></div>
-    </div>
-    
-    <div class="relative z-10 max-w-4xl mx-auto text-center text-white">
-      <h2 class="text-4xl sm:text-5xl lg:text-6xl font-black mb-6">
-        Ready to Transform?
-      </h2>
-      <p class="text-xl sm:text-2xl mb-12 opacity-90 leading-relaxed">
-        Partner with HilBar to unlock your organization's full potential through strategic transformation. 
-        <br class="hidden sm:block">
-        Let's build your competitive advantage together.
-      </p>
-      
-      <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
-        <a href="/contact" class="group px-12 py-6 bg-white text-pink-600 rounded-2xl font-bold text-lg shadow-2xl hover:shadow-3xl transform hover:-translate-y-2 transition-all duration-500 flex items-center">
-          <span>Schedule Consultation</span>
-          <svg class="ml-3 w-6 h-6 group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-          </svg>
-        </a>
-        <a href="mailto:contact@hilbar.com" class="group px-12 py-6 bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl font-semibold text-lg hover:bg-white/20 transition-all duration-300 flex items-center">
-          <span>Email Us Directly</span>
-          <svg class="ml-3 w-6 h-6 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-          </svg>
-        </a>
-      </div>
-      
-      <!-- Trust Signals -->
-      <div class="mt-16 pt-12 border-t border-white/20">
-        <p class="text-sm opacity-80 mb-6">Built for enterprise excellence</p>
-        <div class="flex flex-wrap justify-center items-center gap-8 opacity-60">
-          <div class="px-6 py-3 bg-white/10 rounded-lg backdrop-blur-sm">
-            <span class="text-sm font-semibold">AI-First</span>
-          </div>
-          <div class="px-6 py-3 bg-white/10 rounded-lg backdrop-blur-sm">
-            <span class="text-sm font-semibold">Security Focused</span>
-          </div>
-          <div class="px-6 py-3 bg-white/10 rounded-lg backdrop-blur-sm">
-            <span class="text-sm font-semibold">Results Driven</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  </div>
 </Layout>
 
-<style>
-  @keyframes gradient {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-  }
-  
-  .animate-gradient {
-    background-size: 200% 200%;
-    animation: gradient 3s ease infinite;
-  }
-  
-  .animate-float {
-    animation: float 6s ease-in-out infinite;
-  }
-  
-  @keyframes float {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-20px); }
-  }
-  
-  .hover\:shadow-3xl:hover {
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-  }
-</style>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const sections = [
+      'hero-section',
+      'ai-solutions-section', 
+      'why-hilbar-section',
+      'success-metrics-section',
+      'supply-chain-section',
+      'final-cta-section'
+    ];
+    
+    const nextBtn = document.getElementById('next-section-btn');
+    const progressBar = document.getElementById('progress-bar');
+    const navigator = document.getElementById('section-navigator');
+    
+    let currentSection = 0;
+    
+    // Update progress bar based on scroll
+    function updateProgress() {
+      const scrollTop = window.pageYOffset;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const scrollPercent = (scrollTop / docHeight) * 100;
+      progressBar.style.height = `${Math.min(scrollPercent, 100)}%`;
+      
+      // Update current section based on scroll position
+      sections.forEach((sectionId, index) => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          const rect = element.getBoundingClientRect();
+          if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
+            currentSection = index;
+          }
+        }
+      });
+    }
+    
+    // Navigate to next section
+    function goToNextSection() {
+      const nextIndex = (currentSection + 1) % sections.length;
+      const nextSectionElement = document.getElementById(sections[nextIndex]);
+      
+      if (nextSectionElement) {
+        nextSectionElement.scrollIntoView({ 
+          behavior: 'smooth',
+          block: 'start'
+        });
+        currentSection = nextIndex;
+      }
+    }
+    
+    // Hide navigator when at bottom
+    function checkVisibility() {
+      const isAtBottom = window.innerHeight + window.pageYOffset >= document.body.offsetHeight - 100;
+      navigator.style.opacity = isAtBottom ? '0' : '1';
+      navigator.style.pointerEvents = isAtBottom ? 'none' : 'auto';
+    }
+    
+    // Event listeners
+    nextBtn.addEventListener('click', goToNextSection);
+    window.addEventListener('scroll', () => {
+      updateProgress();
+      checkVisibility();
+    });
+    
+    // Initial setup
+    updateProgress();
+    checkVisibility();
+  });
+</script>

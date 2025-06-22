@@ -1,0 +1,61 @@
+---
+// src/components/FinalCTA.astro
+---
+
+<!-- Final CTA Section -->
+<section class="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-pink-500 to-red-600 relative overflow-hidden">
+  <!-- Background Pattern -->
+  <div class="absolute inset-0 opacity-10">
+    <div class="absolute top-10 left-10 w-32 h-32 bg-white rounded-full blur-3xl"></div>
+    <div class="absolute bottom-20 right-20 w-40 h-40 bg-white rounded-full blur-3xl"></div>
+    <div class="absolute top-1/2 left-1/3 w-24 h-24 bg-white rounded-full blur-2xl"></div>
+  </div>
+  
+  <div class="relative z-10 max-w-4xl mx-auto text-center text-white">
+    <h2 class="text-4xl sm:text-5xl lg:text-6xl font-black mb-6">
+      Ready to Transform with AI?
+    </h2>
+    <p class="text-xl sm:text-2xl mb-12 opacity-90 leading-relaxed">
+      Join industry leaders who trust HilBar for AI consulting, supply chain optimization, and HR transformation. 
+      <br class="hidden sm:block">
+      Let's build your competitive advantage through strategic AI implementation.
+    </p>
+    
+    <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+      <a href="/contact" class="group px-12 py-6 bg-white text-pink-600 rounded-2xl font-bold text-lg shadow-2xl hover:shadow-3xl transform hover:-translate-y-2 transition-all duration-500 flex items-center">
+        <span>Schedule AI Consultation</span>
+        <svg class="ml-3 w-6 h-6 group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+        </svg>
+      </a>
+      <a href="mailto:info@hilbar.llc" class="group px-12 py-6 bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl font-semibold text-lg hover:bg-white/20 transition-all duration-300 flex items-center">
+        <span>Email Us Directly</span>
+        <svg class="ml-3 w-6 h-6 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+        </svg>
+      </a>
+    </div>
+    
+    <!-- Trust Signals -->
+    <div class="mt-16 pt-12 border-t border-white/20">
+      <p class="text-sm opacity-80 mb-6">Trusted by companies of all sizes across industries</p>
+      <div class="flex flex-wrap justify-center items-center gap-8 opacity-60">
+        <div class="px-6 py-3 bg-white/10 rounded-lg backdrop-blur-sm">
+          <span class="text-sm font-semibold">AI Consulting</span>
+        </div>
+        <div class="px-6 py-3 bg-white/10 rounded-lg backdrop-blur-sm">
+          <span class="text-sm font-semibold">Supply Chain AI</span>
+        </div>
+        <div class="px-6 py-3 bg-white/10 rounded-lg backdrop-blur-sm">
+          <span class="text-sm font-semibold">HR Transformation</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .hover\:shadow-3xl:hover {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  }
+</style>
