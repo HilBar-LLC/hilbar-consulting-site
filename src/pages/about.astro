@@ -1,60 +1,195 @@
 ---
 // src/pages/about.astro
-import Layout from '../layouts/Layout.astro';
-import Navigation from '../components/Navigation.astro';
+import Layout from "../layouts/Layout.astro";
+import Navigation from "../components/Navigation.astro";
 ---
 
-<Layout title="About - HilBar Consulting" description="Learn about HilBar LLC's mission, expertise, and the team behind our AI-powered consulting solutions.">
+<Layout
+  title="About - HilBar Consulting"
+  description="Learn about HilBar LLC's mission, expertise, and the team behind our AI-powered consulting solutions."
+>
   <Navigation />
+  <!-- Structured Data for About Page -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ConsultingFirm",
+      "name": "HilBar Consulting",
+      "url": "https://hilbar.llc/about",
+      "logo": "https://hilbar.llc/hilbar_logo_nobg.png",
+      "description": "HilBar Consulting accelerates enterprise transformation through strategic AI integration, supply chain intelligence, and organizational change expertise.",
+      "foundingDate": "2023",
+      "sameAs": ["https://www.linkedin.com/company/hilbar-consulting"],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Customer Support",
+        "email": "info@hilbar.llc",
+        "availableLanguage": "English"
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "Global"
+      },
+      "knowsAbout": [
+        "AI Strategy",
+        "Supply Chain Optimization",
+        "Digital Transformation",
+        "Executive Coaching",
+        "HR AI Integration",
+        "Organizational Change"
+      ]
+    }
+  </script>
+
+  <!-- FAQ Structured Data for About Page -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What makes HilBar different from other AI consultancies?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "HilBar delivers not only deep technical AI expertise but also organizational transformation, executive coaching, and domain-specific strategy. We bridge tech, people, and process."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is HilBar's delivery methodology?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our approach includes strategic assessment, rapid prototyping in 4-6 weeks, and scalable enterprise implementation with continuous optimization."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How fast can HilBar deliver measurable results?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "HilBar's clients typically see proof-of-concept results within 4-6 weeks and full transformation within 12 weeks. We prioritize speed-to-impact."
+          }
+        }
+      ]
+    }
+  </script>
 
   <!-- Hero Section -->
   <section class="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
     <div class="max-w-7xl mx-auto">
       <div class="text-center mb-16" data-aos="fade-up">
-        <div class="inline-flex items-center space-x-2 px-4 py-2 bg-gradient-to-r from-pink-100 to-red-100 dark:from-pink-900/30 dark:to-red-900/30 rounded-full mb-6">
+        <div
+          class="inline-flex items-center space-x-2 px-4 py-2 bg-gradient-to-r from-pink-100 to-red-100 dark:from-pink-900/30 dark:to-red-900/30 rounded-full mb-6"
+        >
           <span class="w-2 h-2 bg-pink-500 rounded-full"></span>
-          <span class="text-sm font-semibold text-pink-700 dark:text-pink-300">ABOUT HILBAR</span>
+          <span class="text-sm font-semibold text-pink-700 dark:text-pink-300"
+            >ABOUT HILBAR</span
+          >
         </div>
-        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight mb-6 bg-gradient-to-r from-slate-900 via-pink-600 to-slate-900 dark:from-white dark:via-pink-400 dark:to-white bg-clip-text text-transparent">
+        <h1
+          class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight mb-6 bg-gradient-to-r from-slate-900 via-pink-600 to-slate-900 dark:from-white dark:via-pink-400 dark:to-white bg-clip-text text-transparent"
+        >
           Transformation at Scale
         </h1>
-        <p class="text-xl sm:text-2xl text-slate-600 dark:text-slate-300 max-w-4xl mx-auto leading-relaxed">
-          We accelerate enterprise transformation through <span class="font-semibold text-slate-900 dark:text-white">strategic AI integration</span> and <span class="font-semibold text-slate-900 dark:text-white">proven methodologies</span> that deliver measurable competitive advantage.
+        <p
+          class="text-xl sm:text-2xl text-slate-600 dark:text-slate-300 max-w-4xl mx-auto leading-relaxed"
+        >
+          We accelerate enterprise transformation through <span
+            class="font-semibold text-slate-900 dark:text-white"
+            >strategic AI integration</span
+          > and <span class="font-semibold text-slate-900 dark:text-white"
+            >proven methodologies</span
+          > that deliver measurable competitive advantage.
         </p>
       </div>
     </div>
   </section>
 
   <!-- Impact Metrics Section -->
-  <section class="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-slate-50 to-white dark:from-slate-900 dark:to-slate-800">
+  <section
+    class="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-slate-50 to-white dark:from-slate-900 dark:to-slate-800"
+  >
     <div class="max-w-7xl mx-auto">
       <div class="text-center mb-12" data-aos="fade-up">
-        <h2 class="text-3xl sm:text-4xl font-black mb-4 bg-gradient-to-r from-slate-900 to-slate-600 dark:from-white dark:to-slate-300 bg-clip-text text-transparent">
+        <h2
+          class="text-3xl sm:text-4xl font-black mb-4 bg-gradient-to-r from-slate-900 to-slate-600 dark:from-white dark:to-slate-300 bg-clip-text text-transparent"
+        >
           Proven Results
         </h2>
-        <p class="text-lg text-slate-600 dark:text-slate-400">Impact metrics that matter to your bottom line</p>
+        <p class="text-lg text-slate-600 dark:text-slate-400">
+          Impact metrics that matter to your bottom line
+        </p>
       </div>
-      
+
       <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-        <div class="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
-          <div class="text-4xl lg:text-5xl font-black text-pink-600 mb-2">3X</div>
-          <div class="text-sm font-semibold text-slate-900 dark:text-white mb-1">Faster ROI</div>
-          <div class="text-xs text-slate-500 dark:text-slate-400">vs. traditional approaches</div>
+        <div
+          class="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <div class="text-4xl lg:text-5xl font-black text-pink-600 mb-2">
+            3X
+          </div>
+          <div
+            class="text-sm font-semibold text-slate-900 dark:text-white mb-1"
+          >
+            Faster ROI
+          </div>
+          <div class="text-xs text-slate-500 dark:text-slate-400">
+            vs. traditional approaches
+          </div>
         </div>
-        <div class="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
-          <div class="text-4xl lg:text-5xl font-black text-blue-600 mb-2">45%</div>
-          <div class="text-sm font-semibold text-slate-900 dark:text-white mb-1">Cost Reduction</div>
-          <div class="text-xs text-slate-500 dark:text-slate-400">average client savings</div>
+        <div
+          class="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <div class="text-4xl lg:text-5xl font-black text-blue-600 mb-2">
+            45%
+          </div>
+          <div
+            class="text-sm font-semibold text-slate-900 dark:text-white mb-1"
+          >
+            Cost Reduction
+          </div>
+          <div class="text-xs text-slate-500 dark:text-slate-400">
+            average client savings
+          </div>
         </div>
-        <div class="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
-          <div class="text-4xl lg:text-5xl font-black text-emerald-600 mb-2">12</div>
-          <div class="text-sm font-semibold text-slate-900 dark:text-white mb-1">Week Delivery</div>
-          <div class="text-xs text-slate-500 dark:text-slate-400">average implementation</div>
+        <div
+          class="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
+          <div class="text-4xl lg:text-5xl font-black text-emerald-600 mb-2">
+            12
+          </div>
+          <div
+            class="text-sm font-semibold text-slate-900 dark:text-white mb-1"
+          >
+            Week Delivery
+          </div>
+          <div class="text-xs text-slate-500 dark:text-slate-400">
+            average implementation
+          </div>
         </div>
-        <div class="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300" data-aos="fade-up" data-aos-delay="400">
-          <div class="text-4xl lg:text-5xl font-black text-purple-600 mb-2">100%</div>
-          <div class="text-sm font-semibold text-slate-900 dark:text-white mb-1">Success Rate</div>
-          <div class="text-xs text-slate-500 dark:text-slate-400">project completion</div>
+        <div
+          class="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        >
+          <div class="text-4xl lg:text-5xl font-black text-purple-600 mb-2">
+            100%
+          </div>
+          <div
+            class="text-sm font-semibold text-slate-900 dark:text-white mb-1"
+          >
+            Success Rate
+          </div>
+          <div class="text-xs text-slate-500 dark:text-slate-400">
+            project completion
+          </div>
         </div>
       </div>
     </div>
@@ -65,55 +200,92 @@ import Navigation from '../components/Navigation.astro';
     <div class="max-w-7xl mx-auto">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         <div data-aos="fade-right">
-          <div class="inline-flex items-center space-x-2 px-4 py-2 bg-gradient-to-r from-blue-100 to-cyan-100 dark:from-blue-900/30 dark:to-cyan-900/30 rounded-full mb-6">
+          <div
+            class="inline-flex items-center space-x-2 px-4 py-2 bg-gradient-to-r from-blue-100 to-cyan-100 dark:from-blue-900/30 dark:to-cyan-900/30 rounded-full mb-6"
+          >
             <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
-            <span class="text-sm font-semibold text-blue-700 dark:text-blue-300">OUR APPROACH</span>
+            <span class="text-sm font-semibold text-blue-700 dark:text-blue-300"
+              >OUR APPROACH</span
+            >
           </div>
-          <h2 class="text-3xl sm:text-4xl font-black mb-8 bg-gradient-to-r from-slate-900 to-slate-600 dark:from-white dark:to-slate-300 bg-clip-text text-transparent">
+          <h2
+            class="text-3xl sm:text-4xl font-black mb-8 bg-gradient-to-r from-slate-900 to-slate-600 dark:from-white dark:to-slate-300 bg-clip-text text-transparent"
+          >
             Why Enterprises Choose HilBar
           </h2>
           <div class="space-y-6">
-            <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
-              <span class="font-semibold text-slate-900 dark:text-white">Most consultancies talk strategy.</span> We deliver executable transformation. Our integrated methodology combines deep technical expertise with proven change management frameworks to ensure sustainable results.
+            <p
+              class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed"
+            >
+              <span class="font-semibold text-slate-900 dark:text-white"
+                >Most consultancies talk strategy.</span
+              > We deliver executable transformation. Our integrated methodology
+              combines deep technical expertise with proven change management frameworks
+              to ensure sustainable results.
             </p>
-            <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
-              We don't just implement AI—we transform how organizations think, operate, and compete in an AI-driven economy.
+            <p
+              class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed"
+            >
+              We don't just implement AI—we transform how organizations think,
+              operate, and compete in an AI-driven economy.
             </p>
           </div>
         </div>
-        
+
         <div class="relative" data-aos="fade-left">
-          <div class="bg-gradient-to-br from-white to-slate-50 dark:from-slate-800 dark:to-slate-700 rounded-3xl p-8 shadow-xl border border-slate-200/50 dark:border-slate-600/30">
-            <h3 class="text-2xl font-bold mb-8 text-slate-900 dark:text-white">The HilBar Difference</h3>
-            
+          <div
+            class="bg-gradient-to-br from-white to-slate-50 dark:from-slate-800 dark:to-slate-700 rounded-3xl p-8 shadow-xl border border-slate-200/50 dark:border-slate-600/30"
+          >
+            <h3 class="text-2xl font-bold mb-8 text-slate-900 dark:text-white">
+              The HilBar Difference
+            </h3>
+
             <div class="space-y-6">
               <div class="flex items-start">
-                <div class="w-8 h-8 bg-gradient-to-br from-pink-500 to-red-500 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                <div
+                  class="w-8 h-8 bg-gradient-to-br from-pink-500 to-red-500 rounded-lg flex items-center justify-center mr-4 flex-shrink-0"
+                >
                   <span class="text-white font-bold text-sm">1</span>
                 </div>
                 <div>
-                  <h4 class="font-bold text-slate-900 dark:text-white mb-2">Strategic Assessment</h4>
-                  <p class="text-slate-600 dark:text-slate-400 text-sm">AI readiness audit and transformation roadmap development</p>
+                  <h4 class="font-bold text-slate-900 dark:text-white mb-2">
+                    Strategic Assessment
+                  </h4>
+                  <p class="text-slate-600 dark:text-slate-400 text-sm">
+                    AI readiness audit and transformation roadmap development
+                  </p>
                 </div>
               </div>
-              
+
               <div class="flex items-start">
-                <div class="w-8 h-8 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                <div
+                  class="w-8 h-8 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center mr-4 flex-shrink-0"
+                >
                   <span class="text-white font-bold text-sm">2</span>
                 </div>
                 <div>
-                  <h4 class="font-bold text-slate-900 dark:text-white mb-2">Rapid Prototyping</h4>
-                  <p class="text-slate-600 dark:text-slate-400 text-sm">Proof-of-concept delivery in 4-6 weeks with measurable KPIs</p>
+                  <h4 class="font-bold text-slate-900 dark:text-white mb-2">
+                    Rapid Prototyping
+                  </h4>
+                  <p class="text-slate-600 dark:text-slate-400 text-sm">
+                    Proof-of-concept delivery in 4-6 weeks with measurable KPIs
+                  </p>
                 </div>
               </div>
-              
+
               <div class="flex items-start">
-                <div class="w-8 h-8 bg-gradient-to-br from-emerald-500 to-green-500 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                <div
+                  class="w-8 h-8 bg-gradient-to-br from-emerald-500 to-green-500 rounded-lg flex items-center justify-center mr-4 flex-shrink-0"
+                >
                   <span class="text-white font-bold text-sm">3</span>
                 </div>
                 <div>
-                  <h4 class="font-bold text-slate-900 dark:text-white mb-2">Scale & Optimize</h4>
-                  <p class="text-slate-600 dark:text-slate-400 text-sm">Enterprise deployment with continuous performance monitoring</p>
+                  <h4 class="font-bold text-slate-900 dark:text-white mb-2">
+                    Scale & Optimize
+                  </h4>
+                  <p class="text-slate-600 dark:text-slate-400 text-sm">
+                    Enterprise deployment with continuous performance monitoring
+                  </p>
                 </div>
               </div>
             </div>
@@ -124,32 +296,63 @@ import Navigation from '../components/Navigation.astro';
   </section>
 
   <!-- Core Capabilities Section -->
-  <section class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-slate-50 to-white dark:from-slate-900 dark:to-slate-800">
+  <section
+    class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-slate-50 to-white dark:from-slate-900 dark:to-slate-800"
+  >
     <div class="max-w-7xl mx-auto">
       <div class="text-center mb-16" data-aos="fade-up">
-        <div class="inline-flex items-center space-x-2 px-4 py-2 bg-gradient-to-r from-purple-100 to-pink-100 dark:from-purple-900/30 dark:to-pink-900/30 rounded-full mb-6">
+        <div
+          class="inline-flex items-center space-x-2 px-4 py-2 bg-gradient-to-r from-purple-100 to-pink-100 dark:from-purple-900/30 dark:to-pink-900/30 rounded-full mb-6"
+        >
           <span class="w-2 h-2 bg-purple-500 rounded-full"></span>
-          <span class="text-sm font-semibold text-purple-700 dark:text-purple-300">CORE CAPABILITIES</span>
+          <span
+            class="text-sm font-semibold text-purple-700 dark:text-purple-300"
+            >CORE CAPABILITIES</span
+          >
         </div>
-        <h2 class="text-3xl sm:text-4xl font-black mb-6 bg-gradient-to-r from-slate-900 to-slate-600 dark:from-white dark:to-slate-300 bg-clip-text text-transparent">
+        <h2
+          class="text-3xl sm:text-4xl font-black mb-6 bg-gradient-to-r from-slate-900 to-slate-600 dark:from-white dark:to-slate-300 bg-clip-text text-transparent"
+        >
           Enterprise-Grade Expertise
         </h2>
-        <p class="text-xl text-slate-600 dark:text-slate-400 max-w-4xl mx-auto leading-relaxed">
-          Deep domain knowledge across technology, strategy, and organizational transformation.
+        <p
+          class="text-xl text-slate-600 dark:text-slate-400 max-w-4xl mx-auto leading-relaxed"
+        >
+          Deep domain knowledge across technology, strategy, and organizational
+          transformation.
         </p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <!-- AI Strategy -->
-        <div class="group bg-white dark:bg-slate-800 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2" data-aos="fade-up" data-aos-delay="100">
-          <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
-            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+        <div
+          class="group bg-white dark:bg-slate-800 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <div
+            class="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500"
+          >
+            <svg
+              class="w-8 h-8 text-white"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+              ></path>
             </svg>
           </div>
-          <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-white">AI Strategy & Architecture</h3>
+          <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-white">
+            AI Strategy & Architecture
+          </h3>
           <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-4">
-            Enterprise AI roadmaps, model selection, and architecture design for scalable intelligent systems.
+            Enterprise AI roadmaps, model selection, and architecture design for
+            scalable intelligent systems.
           </p>
           <ul class="space-y-2 text-sm text-slate-600 dark:text-slate-400">
             <li class="flex items-center">
@@ -168,15 +371,33 @@ import Navigation from '../components/Navigation.astro';
         </div>
 
         <!-- Digital Transformation -->
-        <div class="group bg-white dark:bg-slate-800 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2" data-aos="fade-up" data-aos-delay="200">
-          <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
-            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+        <div
+          class="group bg-white dark:bg-slate-800 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <div
+            class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500"
+          >
+            <svg
+              class="w-8 h-8 text-white"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M13 10V3L4 14h7v7l9-11h-7z"></path>
             </svg>
           </div>
-          <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-white">Digital Transformation</h3>
+          <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-white">
+            Digital Transformation
+          </h3>
           <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-4">
-            End-to-end process optimization, automation, and technology integration for operational excellence.
+            End-to-end process optimization, automation, and technology
+            integration for operational excellence.
           </p>
           <ul class="space-y-2 text-sm text-slate-600 dark:text-slate-400">
             <li class="flex items-center">
@@ -195,15 +416,34 @@ import Navigation from '../components/Navigation.astro';
         </div>
 
         <!-- Organizational Change -->
-        <div class="group bg-white dark:bg-slate-800 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2" data-aos="fade-up" data-aos-delay="300">
-          <div class="w-16 h-16 bg-gradient-to-br from-emerald-500 to-green-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
-            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 515.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 919.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+        <div
+          class="group bg-white dark:bg-slate-800 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
+          <div
+            class="w-16 h-16 bg-gradient-to-br from-emerald-500 to-green-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500"
+          >
+            <svg
+              class="w-8 h-8 text-white"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 515.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 919.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+              ></path>
             </svg>
           </div>
-          <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-white">Organizational Excellence</h3>
+          <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-white">
+            Organizational Excellence
+          </h3>
           <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-4">
-            Change management, capability building, and cultural transformation for sustained competitive advantage.
+            Change management, capability building, and cultural transformation
+            for sustained competitive advantage.
           </p>
           <ul class="space-y-2 text-sm text-slate-600 dark:text-slate-400">
             <li class="flex items-center">
@@ -228,50 +468,78 @@ import Navigation from '../components/Navigation.astro';
   <section class="py-20 px-4 sm:px-6 lg:px-8">
     <div class="max-w-7xl mx-auto">
       <div class="text-center mb-16" data-aos="fade-up">
-        <div class="inline-flex items-center space-x-2 px-4 py-2 bg-gradient-to-r from-emerald-100 to-green-100 dark:from-emerald-900/30 dark:to-green-900/30 rounded-full mb-6">
+        <div
+          class="inline-flex items-center space-x-2 px-4 py-2 bg-gradient-to-r from-emerald-100 to-green-100 dark:from-emerald-900/30 dark:to-green-900/30 rounded-full mb-6"
+        >
           <span class="w-2 h-2 bg-emerald-500 rounded-full"></span>
-          <span class="text-sm font-semibold text-emerald-700 dark:text-emerald-300">CLIENT SUCCESS</span>
+          <span
+            class="text-sm font-semibold text-emerald-700 dark:text-emerald-300"
+            >CLIENT SUCCESS</span
+          >
         </div>
-        <h2 class="text-3xl sm:text-4xl font-black mb-6 bg-gradient-to-r from-slate-900 to-slate-600 dark:from-white dark:to-slate-300 bg-clip-text text-transparent">
+        <h2
+          class="text-3xl sm:text-4xl font-black mb-6 bg-gradient-to-r from-slate-900 to-slate-600 dark:from-white dark:to-slate-300 bg-clip-text text-transparent"
+        >
           Our Framework for Success
         </h2>
-        <p class="text-xl text-slate-600 dark:text-slate-400 max-w-4xl mx-auto leading-relaxed">
-          A proven methodology that delivers measurable business value from day one.
+        <p
+          class="text-xl text-slate-600 dark:text-slate-400 max-w-4xl mx-auto leading-relaxed"
+        >
+          A proven methodology that delivers measurable business value from day
+          one.
         </p>
       </div>
 
-      <div class="bg-gradient-to-br from-white to-slate-50 dark:from-slate-800 dark:to-slate-700 rounded-3xl p-12 shadow-xl border border-slate-200/50 dark:border-slate-600/30" data-aos="fade-up">
+      <div
+        class="bg-gradient-to-br from-white to-slate-50 dark:from-slate-800 dark:to-slate-700 rounded-3xl p-12 shadow-xl border border-slate-200/50 dark:border-slate-600/30"
+        data-aos="fade-up"
+      >
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
           <!-- Phase 1 -->
           <div class="text-center">
-            <div class="w-20 h-20 bg-gradient-to-br from-pink-500 to-red-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
+            <div
+              class="w-20 h-20 bg-gradient-to-br from-pink-500 to-red-500 rounded-2xl flex items-center justify-center mx-auto mb-6"
+            >
               <span class="text-2xl font-black text-white">1</span>
             </div>
-            <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-white">Assess & Strategize</h3>
+            <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-white">
+              Assess & Strategize
+            </h3>
             <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
-              Comprehensive AI readiness assessment, opportunity identification, and strategic roadmap development with clear ROI projections.
+              Comprehensive AI readiness assessment, opportunity identification,
+              and strategic roadmap development with clear ROI projections.
             </p>
           </div>
 
           <!-- Phase 2 -->
           <div class="text-center">
-            <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
+            <div
+              class="w-20 h-20 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center mx-auto mb-6"
+            >
               <span class="text-2xl font-black text-white">2</span>
             </div>
-            <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-white">Build & Validate</h3>
+            <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-white">
+              Build & Validate
+            </h3>
             <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
-              Rapid prototyping and pilot implementation with measurable KPIs, risk mitigation, and stakeholder alignment.
+              Rapid prototyping and pilot implementation with measurable KPIs,
+              risk mitigation, and stakeholder alignment.
             </p>
           </div>
 
           <!-- Phase 3 -->
           <div class="text-center">
-            <div class="w-20 h-20 bg-gradient-to-br from-emerald-500 to-green-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
+            <div
+              class="w-20 h-20 bg-gradient-to-br from-emerald-500 to-green-500 rounded-2xl flex items-center justify-center mx-auto mb-6"
+            >
               <span class="text-2xl font-black text-white">3</span>
             </div>
-            <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-white">Scale & Optimize</h3>
+            <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-white">
+              Scale & Optimize
+            </h3>
             <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
-              Enterprise-wide deployment, continuous optimization, and capability transfer for sustainable competitive advantage.
+              Enterprise-wide deployment, continuous optimization, and
+              capability transfer for sustainable competitive advantage.
             </p>
           </div>
         </div>
@@ -280,35 +548,72 @@ import Navigation from '../components/Navigation.astro';
   </section>
 
   <!-- CTA Section -->
-  <section class="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-pink-500 to-red-600 relative overflow-hidden">
+  <section
+    class="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-pink-500 to-red-600 relative overflow-hidden"
+  >
     <!-- Background Pattern -->
     <div class="absolute inset-0 opacity-10">
-      <div class="absolute top-10 left-10 w-32 h-32 bg-white rounded-full blur-3xl"></div>
-      <div class="absolute bottom-20 right-20 w-40 h-40 bg-white rounded-full blur-3xl"></div>
-      <div class="absolute top-1/2 left-1/3 w-24 h-24 bg-white rounded-full blur-2xl"></div>
+      <div
+        class="absolute top-10 left-10 w-32 h-32 bg-white rounded-full blur-3xl"
+      >
+      </div>
+      <div
+        class="absolute bottom-20 right-20 w-40 h-40 bg-white rounded-full blur-3xl"
+      >
+      </div>
+      <div
+        class="absolute top-1/2 left-1/3 w-24 h-24 bg-white rounded-full blur-2xl"
+      >
+      </div>
     </div>
-    
+
     <div class="relative z-10 max-w-4xl mx-auto text-center text-white">
       <div data-aos="fade-up">
         <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black mb-6">
           Ready to Accelerate Your Transformation?
         </h2>
         <p class="text-xl sm:text-2xl mb-12 opacity-90 leading-relaxed">
-          Join industry leaders who trust HilBar to deliver measurable AI transformation. 
-          <br class="hidden sm:block">
+          Join industry leaders who trust HilBar to deliver measurable AI
+          transformation.
+          <br class="hidden sm:block" />
           Let's discuss your strategic objectives and growth opportunities.
         </p>
         <div class="flex flex-col sm:flex-row gap-6 justify-center">
-          <a href="/contact" class="group px-12 py-6 bg-white text-pink-600 rounded-2xl font-bold text-lg shadow-2xl hover:shadow-3xl transform hover:-translate-y-2 transition-all duration-500 flex items-center justify-center">
+          <a
+            href="/contact"
+            class="group px-12 py-6 bg-white text-pink-600 rounded-2xl font-bold text-lg shadow-2xl hover:shadow-3xl transform hover:-translate-y-2 transition-all duration-500 flex items-center justify-center"
+          >
             <span>Schedule Strategic Consultation</span>
-            <svg class="ml-3 w-6 h-6 group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+            <svg
+              class="ml-3 w-6 h-6 group-hover:translate-x-2 transition-transform duration-300"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+              ></path>
             </svg>
           </a>
-          <a href="/#services" class="group px-12 py-6 bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl font-semibold text-lg hover:bg-white/20 transition-all duration-300 flex items-center justify-center">
+          <a
+            href="/#services"
+            class="group px-12 py-6 bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl font-semibold text-lg hover:bg-white/20 transition-all duration-300 flex items-center justify-center"
+          >
             <span>Explore Our Capabilities</span>
-            <svg class="ml-3 w-6 h-6 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            <svg
+              class="ml-3 w-6 h-6 group-hover:translate-x-1 transition-transform duration-300"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"></path>
             </svg>
           </a>
         </div>

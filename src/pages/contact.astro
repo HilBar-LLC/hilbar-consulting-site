@@ -11,31 +11,75 @@ import Navigation from "../components/Navigation.astro";
   <Navigation />
 
   <!-- Structured Data for SEO -->
+  <!-- Structured Data for Contact Page -->
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "ContactPage",
-      "name": "Contact HilBar Consulting",
-      "description": "Contact HilBar Consulting for AI transformation and strategic consulting services",
       "url": "https://hilbar.llc/contact",
+      "name": "Contact HilBar Consulting",
+      "description": "Reach out to HilBar Consulting to discuss AI strategy, supply chain optimization, HR transformation, and digital innovation opportunities.",
       "mainEntity": {
         "@type": "Organization",
         "name": "HilBar Consulting",
-        "email": "info@hilbar.llc",
+        "url": "https://hilbar.llc",
+        "logo": "https://hilbar.llc/hilbar_logo_nobg.png",
         "contactPoint": {
           "@type": "ContactPoint",
-          "contactType": "Business Inquiries",
+          "contactType": "Sales",
           "email": "info@hilbar.llc",
-          "availableLanguage": "English"
+          "areaServed": "Global",
+          "availableLanguage": ["English"]
         },
-        "areaServed": "Global",
-        "serviceType": [
-          "AI Strategy Consulting",
+        "sameAs": ["https://www.linkedin.com/company/hilbar-consulting"],
+        "foundingDate": "2023",
+        "serviceArea": {
+          "@type": "Place",
+          "name": "Global"
+        },
+        "knowsAbout": [
+          "AI Consulting",
           "Digital Transformation",
-          "Software Engineering",
-          "Organizational Strategy"
+          "Organizational Change",
+          "Supply Chain Intelligence",
+          "HR Tech",
+          "ML Implementation"
         ]
       }
+    }
+  </script>
+
+  <!-- FAQ Structured Data for Contact Page -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What happens after I contact HilBar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We typically respond within 4-6 hours. You'll be invited to a 45-minute strategy session to assess your needs and determine the best transformation approach."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer free consultations?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we offer an initial strategic consultation at no cost to evaluate your goals, challenges, and AI readiness."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What industries does HilBar serve?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "HilBar serves enterprise clients across industries including supply chain, manufacturing, HR, and tech, with a global remote-first delivery model."
+          }
+        }
+      ]
     }
   </script>
 
