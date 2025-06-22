@@ -4,9 +4,9 @@ import tailwind from '@astrojs/tailwind';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-  site: 'https://hilbar.llc', // Required for sitemap to work
+  site: 'https://hilbar.llc',
   integrations: [
     tailwind(),
-    sitemap(), // <-- Add this
+    sitemap(), 
   ],
 });
