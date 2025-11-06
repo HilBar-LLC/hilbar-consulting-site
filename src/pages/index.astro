@@ -4,15 +4,15 @@ import Layout from "../layouts/Layout.astro";
 import Navigation from "../components/Navigation.astro";
 import Hero from "../components/Hero.astro";
 import AISolutions from "../components/AISolutions.astro";
-import SupplyChainAI from "../components/SupplyChainAI.astro";
+import SoftwareSolutions from "../components/SoftwareSolutions.astro";
 import WhyHilbar from "../components/WhyHilbar.astro";
 import SuccessMetrics from "../components/SuccessMetrics.astro";
 import FinalCTA from "../components/FinalCTA.astro";
 ---
 
-<Layout 
-  title="Business Transformation & AI Strategy | HilBar Consulting" 
-  description="Strategic consulting for businesses ready to transform through AI implementation, HR strategy optimization, and supply chain solutions. Expert guidance for companies seeking competitive advantage through intelligent business transformation."
+<Layout
+  title="AI Consulting & Full Stack Software Development | HilBar Consulting"
+  description="Strategic consulting for businesses ready to transform through AI implementation, full stack software development, and HR strategy optimization. Expert guidance for companies seeking competitive advantage through intelligent technology solutions."
 >
   <Navigation />
 
@@ -22,7 +22,7 @@ import FinalCTA from "../components/FinalCTA.astro";
       "@context": "https://schema.org",
       "@type": "ConsultingCompany",
       "name": "HilBar Consulting",
-      "description": "AI consulting firm specializing in supply chain optimization, HR transformation, and enterprise AI strategy",
+      "description": "AI consulting firm specializing in full stack software development, HR transformation, and enterprise AI strategy",
       "url": "https://hilbar.llc",
       "logo": "https://hilbar.llc/hilbar_logo_nobg.png",
       "sameAs": ["https://www.linkedin.com/company/hilbar-consulting"],
@@ -30,7 +30,7 @@ import FinalCTA from "../components/FinalCTA.astro";
       "foundingDate": "2023",
       "expertise": [
         "AI Consulting",
-        "Supply Chain Optimization",
+        "Full Stack Software Development",
         "HR Transformation",
         "Machine Learning Implementation",
         "Digital Transformation",
@@ -38,7 +38,7 @@ import FinalCTA from "../components/FinalCTA.astro";
       ],
       "knowsAbout": [
         "Artificial Intelligence",
-        "Supply Chain Management",
+        "Software Engineering",
         "Human Resources Technology",
         "Business Process Automation",
         "Predictive Analytics",
@@ -65,10 +65,10 @@ import FinalCTA from "../components/FinalCTA.astro";
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "How can AI solve supply chain problems?",
+          "name": "What software development services does HilBar provide?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "AI solves supply chain problems through predictive analytics for demand forecasting, real-time inventory optimization, automated supplier risk assessment, and intelligent logistics routing. This reduces costs by 20-30% while improving delivery performance and supply chain resilience."
+            "text": "HilBar provides full stack software development including custom web and mobile applications, cloud-native architecture on AWS/Azure/GCP, API design and integration, DevOps implementation, and database optimization. We build scalable solutions from rapid prototypes to enterprise platforms."
           }
         },
         {
@@ -76,7 +76,7 @@ import FinalCTA from "../components/FinalCTA.astro";
           "name": "What AI consulting services does HilBar provide?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "HilBar provides AI strategy development, machine learning implementation, supply chain optimization, HR transformation through AI, predictive analytics, and organizational change management for AI adoption."
+            "text": "HilBar provides AI strategy development, machine learning implementation, HR transformation through AI, predictive analytics, and organizational change management for AI adoption. We combine technical excellence with business understanding."
           }
         },
         {
@@ -104,8 +104,8 @@ import FinalCTA from "../components/FinalCTA.astro";
   <div id="success-metrics-section">
     <SuccessMetrics />
   </div>
-  <div id="supply-chain-section">
-    <SupplyChainAI />
+  <div id="software-solutions-section">
+    <SoftwareSolutions />
   </div>
   <div id="final-cta-section">
     <FinalCTA />
@@ -130,10 +130,10 @@ import FinalCTA from "../components/FinalCTA.astro";
   document.addEventListener('DOMContentLoaded', function() {
     const sections = [
       'hero-section',
-      'ai-solutions-section', 
+      'ai-solutions-section',
       'why-hilbar-section',
       'success-metrics-section',
-      'supply-chain-section',
+      'software-solutions-section',
       'final-cta-section'
     ];
     
